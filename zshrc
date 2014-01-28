@@ -49,6 +49,8 @@ alias cleanup-remote-branches='git remote prune origin'
 # Misc
 alias serve='python -m SimpleHTTPServer'
 alias venv='source ./virtualenv/bin/activate'
+alias b='bundle exec'
+alias s='b spring'
 
 # Get rid of autocorrection
 unsetopt correct_all
