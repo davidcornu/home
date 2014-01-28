@@ -1,7 +1,7 @@
 export PATH=""
 
 # Load default PATH
-if [ -x /usr/libexec/path_helper ]; then eval `/usr/libexec/path_helper -s`; fi
+if [ -x /usr/libexec/path_helper ]; then eval "$(/usr/libexec/path_helper -s)"; fi
 if [ -f /etc/environment ]; then source /etc/environment; fi
 
 # Oh-my-zsh
