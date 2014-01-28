@@ -7,13 +7,14 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
-Bundle "vim-scripts/Align"
+Bundle "godlygeek/tabular"
 Bundle "kchmck/vim-coffee-script"
 Bundle "elixir-lang/vim-elixir"
 Bundle "tomtom/tcomment_vim"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "rking/ag.vim"
+Bundle "tpope/vim-abolish"
 
 " Peace and quiet
 set noerrorbells
