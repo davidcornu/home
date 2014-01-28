@@ -26,12 +26,20 @@ let g:ctrlp_cmd = "CtrlP"
 " https://github.com/scrooloose/nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
+" Use git-stripspace
+function! StripWhitespace()
+  let l = line(".")
+  let c = col(".")
+  %!git stripspace
+  call cursor(l, c)
+endfunction
+
 " Some handy shortcuts
 let mapleader=","
 map <Leader>h :nohl<CR>
 map <Leader>p :set paste!<CR>:set paste?<CR>
 map <Leader>r :set relativenumber!<CR>:set relativenumber?<CR>
-map <Leader>w :%!git stripspace<CR>
+map <Leader>w :call StripWhitespace()<CR>
 
 " General settings
 syntax on
