@@ -1,7 +1,8 @@
 export PATH=""
 
-# Load default OS X PATH
+# Load default PATH
 if [ -x /usr/libexec/path_helper ]; then eval `/usr/libexec/path_helper -s`; fi
+if [ -f /etc/environment ]; then source /etc/environment; fi
 
 # Oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
@@ -60,15 +61,20 @@ then
 fi
 
 # Load nvm
-if [ -d ~/.nvm ]
+if [ -s ~/.nvm/nvm.sh ]
 then
   source ~/.nvm/nvm.sh
 fi
 
 # Set editor
-if which vim > /dev/null
-then
-  export EDITOR="$(which vim)"
-else
-  echo "Could not find vim"
-fi
+export EDITOR=vim
+
+# Quick Vagrant
+dev(){
+  (
+    set -e
+    cd ~/vagrant
+    if vagrant status | grep -q 'powered off'; then vagrant up; fi
+    vagrant ssh -- -t 'cd ~/src/shopify && exec $SHELL --login'
+  )
+}
