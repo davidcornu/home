@@ -14,7 +14,6 @@ Bundle "tomtom/tcomment_vim"
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "rking/ag.vim"
-Bundle "chriskempson/vim-tomorrow-theme"
 
 " Peace and quiet
 set noerrorbells
@@ -35,6 +34,8 @@ map <Leader>r :set relativenumber!<CR>:set relativenumber?<CR>
 map <Leader>w :%!git stripspace<CR>
 
 " General settings
+syntax on
+filetype plugin indent on
 set backspace=2
 set nocompatible
 set hlsearch
@@ -43,18 +44,12 @@ set hidden
 set ts=2 sts=2 sw=2 expandtab
 set nobackup
 set noswapfile
-syntax on
-filetype plugin indent on
 set laststatus=2
 set showcmd
-set fillchars="" 
+set fillchars=""
 set number
 set nowrap
-" set cc=80
-" highlight ColorColumn ctermbg=LightGray
 set autoindent
 set ignorecase smartcase
 set wildmenu
 set wildmode=list:longest,full
-
-" colorscheme Tomorrow
