@@ -1,0 +1,25 @@
+[user]
+	name = David Cornu
+	email = davidjcornu@gmail.com
+[core]
+	quotepath = false
+  excludesfile = ~/.gitignore
+[color]
+	ui = true
+[push]
+  default = current
+[pull]
+  default = current
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
