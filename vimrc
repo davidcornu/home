@@ -15,6 +15,8 @@ Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "rking/ag.vim"
 Bundle "tpope/vim-abolish"
+Bundle "ervandew/supertab"
+Bundle "chriskempson/vim-tomorrow-theme"
 
 " Peace and quiet
 set noerrorbells
@@ -65,3 +67,9 @@ set autoindent
 set ignorecase smartcase
 set wildmenu
 set wildmode=list:longest,full
+set title
+set cursorline
+
+" Theme
+set t_Co=256
+colorscheme Tomorrow-Night
