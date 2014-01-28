@@ -42,6 +42,9 @@ map <Leader>p :set paste!<CR>:set paste?<CR>
 map <Leader>r :set relativenumber!<CR>:set relativenumber?<CR>
 map <Leader>w :call StripWhitespace()<CR>
 
+" Customize Ag
+let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
+
 " General settings
 syntax on
 filetype plugin indent on
