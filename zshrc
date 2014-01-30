@@ -72,6 +72,8 @@ fi
 export EDITOR=vim
 
 # Quick Vagrant
+v(){ ( cd ~/vagrant && vagrant $* ) }
+
 dev(){
   (
     set -e
