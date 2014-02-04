@@ -49,7 +49,7 @@ ensure_repo(){
   
   (
     cd "$repo_path"
-    if git rev-parse --is-inside-work-tree > /dev/null
+    if git rev-parse --is-inside-work-tree > /dev/null && [ "$repo_path" =  "$(git rev-parse --show-toplevel)" ]
     then
       log "$repo_path is a already a git repository. Updating."
       git pull origin master
