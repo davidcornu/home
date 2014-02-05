@@ -25,3 +25,7 @@ $ cd ~/dotfiles
 $ git pull
 $ ./bootstrap.sh
 ```
+
+## Additional text
+
+Adding some text to test github notifications
