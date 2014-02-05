@@ -16,6 +16,7 @@ Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "rking/ag.vim"
 Bundle "tpope/vim-abolish"
 Bundle "ervandew/supertab"
+Bundle "tpope/vim-dispatch"
 Bundle "chriskempson/vim-tomorrow-theme"
 
 " Peace and quiet
