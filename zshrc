@@ -45,6 +45,7 @@ fi
 alias delete-local-branch='git branch -D'
 alias delete-remote-branch='git push origin --delete'
 alias cleanup-remote-branches='git remote prune origin'
+alias vim-conflicts='vim $(git diff-files --name-only -0)'
 
 # Misc
 alias serve='python -m SimpleHTTPServer'
