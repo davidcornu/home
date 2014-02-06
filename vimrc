@@ -8,16 +8,22 @@ Bundle "gmarik/vundle"
 Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
 Bundle "godlygeek/tabular"
-Bundle "kchmck/vim-coffee-script"
-Bundle "elixir-lang/vim-elixir"
 Bundle "tomtom/tcomment_vim"
 Bundle "kana/vim-textobj-user"
-Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "rking/ag.vim"
 Bundle "tpope/vim-abolish"
 Bundle "ervandew/supertab"
-Bundle "tpope/vim-dispatch"
+Bundle "Lokaltog/vim-easymotion"
+Bundle "airblade/vim-gitgutter"
+Bundle "Townk/vim-autoclose"
+
+" Themes
 Bundle "chriskempson/vim-tomorrow-theme"
+
+" Additional language support
+Bundle "kchmck/vim-coffee-script"
+Bundle "elixir-lang/vim-elixir"
+Bundle "nelstrom/vim-textobj-rubyblock"
 
 " Peace and quiet
 set noerrorbells
