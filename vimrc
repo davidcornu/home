@@ -55,27 +55,36 @@ map <Leader>w :call StripWhitespace()<CR>
 let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
 
 " General settings
+set nocompatible
 syntax on
 filetype plugin indent on
-set backspace=2
-set nocompatible
-set hlsearch
-set incsearch
-set hidden
-set ts=2 sts=2 sw=2 expandtab
-set nobackup
-set noswapfile
+
+" Convenience
+set nobackup noswapfile
+set autoread
+
+" Text editing
+set backspace=indent,eol,start
+set ts=2 sts=2 sw=2 expandtab smarttab
+set autoindent
+
+" Search
+set hlsearch incsearch
+set ignorecase smartcase
+
+" Display
 set laststatus=2
 set showcmd
-set fillchars=""
 set number
-set nowrap
-set autoindent
-set ignorecase smartcase
-set wildmenu
-set wildmode=list:longest,full
-set title
+set hidden
 set cursorline
+set fillchars=""
+set nowrap
+set wildmenu wildmode=list:longest,full
+set title
+set scrolloff=3
+set sidescrolloff=5
+set ruler
 
 " Theme
 set t_Co=256
