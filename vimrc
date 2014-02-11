@@ -56,6 +56,7 @@ let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
 
 " General settings
 set nocompatible
+set encoding=utf-8
 syntax on
 filetype plugin indent on
 
@@ -67,6 +68,7 @@ set autoread
 set backspace=indent,eol,start
 set ts=2 sts=2 sw=2 expandtab smarttab
 set autoindent
+set textwidth=100
 
 " Search
 set hlsearch incsearch
