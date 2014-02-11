@@ -47,7 +47,7 @@ endfunction
 
 " Some handy shortcuts
 let mapleader=","
-map <Leader>h :nohl<CR>
+map <Leader>c :nohl<CR>
 map <Leader>p :set paste!<CR>:set paste?<CR>
 map <Leader>r :set relativenumber!<CR>:set relativenumber?<CR>
 map <Leader>w :call StripWhitespace()<CR>
