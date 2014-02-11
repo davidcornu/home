@@ -16,6 +16,7 @@ Bundle "ervandew/supertab"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "airblade/vim-gitgutter"
 Bundle "Townk/vim-autoclose"
+Bundle "itchyny/lightline.vim"
 
 " Themes
 Bundle "chriskempson/vim-tomorrow-theme"
