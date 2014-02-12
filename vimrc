@@ -35,7 +35,7 @@ let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlP"
 
 " https://github.com/scrooloose/nerdtree
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Use git-stripspace
 function! StripWhitespace()
@@ -45,12 +45,24 @@ function! StripWhitespace()
   call cursor(l, c)
 endfunction
 
+" Toggle relative numbers
+function! ToggleNumbers()
+  if (&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunction
+
 " Some handy shortcuts
 let mapleader=","
-map <Leader>c :nohl<CR>
-map <Leader>p :set paste!<CR>:set paste?<CR>
-map <Leader>r :set relativenumber!<CR>:set relativenumber?<CR>
-map <Leader>w :call StripWhitespace()<CR>
+nnoremap <Leader>c :nohl<CR>
+nnoremap <Leader>p :set paste!<CR>
+nnoremap <Leader>r :call ToggleNumbers()<CR>
+nnoremap <Leader>w :call StripWhitespace()<CR>
+
+" Don't trigger jump list with tab
+nnoremap <Tab> <Nop>
 
 " Customize Ag
 let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
