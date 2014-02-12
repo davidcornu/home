@@ -65,6 +65,9 @@ nnoremap <Leader>q :cclose<CR>
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
 
+" Quick comment toggling
+noremap \ :TComment<CR>
+
 " Customize Ag
 let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
 
