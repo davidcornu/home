@@ -60,6 +60,7 @@ nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>
+nnoremap <Leader>q :cclose<CR>
 
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
