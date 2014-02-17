@@ -49,10 +49,11 @@ alias cleanup-local-branches='git branch --merged | grep -v "\*" | xargs -n 1 gi
 alias vim-conflicts='vim $(git diff-files --name-only -0)'
 
 # Misc
-alias serve='python -m SimpleHTTPServer'
+alias serve='ruby -run -e httpd . -p 9090'
 alias venv='source ./virtualenv/bin/activate'
 alias b='bundle exec'
 alias s='b spring'
+alias irb='irb -r "irb/completion"'
 
 # Get rid of autocorrection
 unsetopt correct_all
