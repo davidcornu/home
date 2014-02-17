@@ -64,6 +64,7 @@ nnoremap <Leader>q :cclose<CR>
 
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
+nnoremap <C-I> <Tab>
 
 " Quick comment toggling
 noremap \ :TComment<CR>
