@@ -55,13 +55,25 @@ function! ToggleNumbers()
   endif
 endfunction
 
+" Toggle the quickfix list
+function! ToggleQuickfix()
+  if exists("g:qfix_win")
+    cclose
+    unlet g:qfix_win
+  else
+    copen
+    wincmd J
+    let g:qfix_win = bufnr("$")
+  end
+endfunction
+
 " Some handy shortcuts
 let mapleader=","
 nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>
-nnoremap <Leader>q :cclose<CR>
+nnoremap <Leader>q :call ToggleQuickfix()<CR>
 
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
