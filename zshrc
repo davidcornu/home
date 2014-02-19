@@ -61,7 +61,7 @@ unsetopt correct_all
 # Load rbenv
 if [ -d ~/.rbenv ]
 then
-  PATH=$HOME/.rbenv/bin:$PATH
+  PATH=~/.rbenv/bin:$PATH
   eval "$(rbenv init -)"
 fi
 
