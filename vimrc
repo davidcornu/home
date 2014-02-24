@@ -34,7 +34,7 @@ set visualbell t_vb=
 
 " http://kien.github.io/ctrlp.vim/#installation
 let g:ctrlp_map = "<c-p>"
-let g:ctrlp_cmd = "CtrlP"
+let g:ctrlp_cmd = "CtrlPMixed"
 
 " https://github.com/scrooloose/nerdtree
 nnoremap <C-n> :NERDTreeToggle<CR>
