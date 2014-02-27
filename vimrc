@@ -37,7 +37,7 @@ let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlPMixed"
 
 " https://github.com/scrooloose/nerdtree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-d> :NERDTreeToggle<CR>
 
 " Use git-stripspace
 function! StripWhitespace()
