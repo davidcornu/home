@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Pure theme
 source ~ZSH_CUSTOM/plugins/pure/pure.zsh
+PURE_GIT_PULL=0
 
 # For local customizations
 if [ -f ~/.profile ] || [ -h ~/.profile ]; then source ~/.profile; fi
