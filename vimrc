@@ -20,24 +20,29 @@ Bundle "itchyny/lightline.vim"
 Bundle "terryma/vim-multiple-cursors"
 Bundle "tpope/vim-fugitive"
 
-" Themes
-Bundle "chriskempson/vim-tomorrow-theme"
-
 " Additional language support
 Bundle "kchmck/vim-coffee-script"
 Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
 
+" Themes
+Bundle "altercation/vim-colors-solarized"
+
+set nocompatible
+
 " Peace and quiet
 set noerrorbells
 set visualbell t_vb=
 
-" http://kien.github.io/ctrlp.vim/#installation
+" ctrlp
 let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlPMixed"
 
-" https://github.com/scrooloose/nerdtree
+" NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
+
+" lightline
+let g:lightline = { 'colorscheme': 'solarized' }
 
 " Use git-stripspace
 function! StripWhitespace()
@@ -68,6 +73,28 @@ function! ToggleQuickfix()
   end
 endfunction
 
+" Run a Shell command and pipe the output to a buffer
+" https://github.com/spf13/spf13-vim/blob/7d48f769d1c991f82beee18a7f644b4ed351e5ce/.vimrc#L963-L981
+function! s:RunShellCommand(cmdline)
+  botright new
+
+  setlocal buftype=nofile
+  setlocal bufhidden=delete
+  setlocal nobuflisted
+  setlocal noswapfile
+  setlocal nowrap
+  setlocal filetype=shell
+  setlocal syntax=shell
+
+  call setline(1, a:cmdline)
+  call setline(2, substitute(a:cmdline, '.', '=', 'g'))
+  execute 'silent $read !' . escape(a:cmdline, '%#')
+  setlocal nomodifiable
+  1
+endfunction
+
+command! -complete=file -nargs=+ Shell call s:RunShellCommand(<q-args>)
+
 " Some handy shortcuts
 let mapleader=","
 nnoremap <Leader>c :nohl<CR>
@@ -83,6 +110,9 @@ nnoremap <C-I> <Tab>
 " Quick comment toggling
 noremap \ :TComment<CR>
 
+" Make Y consistent with C/D
+nnoremap Y y$
+
 " Strip whitespace before saving
 autocmd BufWritePre * call StripWhitespace()
 
@@ -90,7 +120,6 @@ autocmd BufWritePre * call StripWhitespace()
 let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
 
 " General settings
-set nocompatible
 set encoding=utf-8
 syntax on
 filetype plugin indent on
@@ -111,6 +140,8 @@ set hlsearch incsearch
 set ignorecase smartcase
 
 " Display
+set mouse=a
+set mousehide
 set laststatus=2
 set showcmd
 set number
@@ -123,7 +154,20 @@ set title
 set scrolloff=3
 set sidescrolloff=5
 set ruler
+set splitright
+set splitbelow
+
+" Use system clipboard by default
+" https://github.com/spf13/spf13-vim/blob/7d48f769d1c991f82beee18a7f644b4ed351e5ce/.vimrc#L73-L79
+if has('clipboard')
+  if has('unnamedplus') " When possible use + register for copy-paste
+    set clipboard=unnamedplus
+  else " On mac and Windows, use * register for copy-paste
+    set clipboard=unnamed
+  endif
+endif
 
 " Theme
-set t_Co=256
-colorscheme Tomorrow-Night
+set t_Co=16 " Use the terminal's colors to get true colors
+set background=dark
+colorscheme solarized
