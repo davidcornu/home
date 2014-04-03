@@ -37,7 +37,7 @@ set visualbell t_vb=
 
 " ctrlp
 let g:ctrlp_map = "<c-p>"
-let g:ctrlp_cmd = "CtrlPMixed"
+let g:ctrlp_cmd = "CtrlP"
 
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
