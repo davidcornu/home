@@ -118,7 +118,7 @@ nnoremap Y y$
 autocmd BufWritePre * call StripWhitespace()
 
 " Customize Ag
-let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
+" let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
 
 " General settings
 set encoding=utf-8
