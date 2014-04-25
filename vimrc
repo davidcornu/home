@@ -25,6 +25,7 @@ Bundle "kchmck/vim-coffee-script"
 Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "fatih/vim-go"
+Bundle "plasticboy/vim-markdown"
 
 " Themes
 Bundle "altercation/vim-colors-solarized"
