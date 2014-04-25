@@ -46,6 +46,9 @@ nnoremap <C-d> :NERDTreeToggle<CR>
 " lightline
 let g:lightline = { 'colorscheme': 'solarized' }
 
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
+
 " Use git-stripspace
 function! StripWhitespace()
   let l = line(".")
