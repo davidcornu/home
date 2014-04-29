@@ -49,6 +49,9 @@ let g:lightline = { 'colorscheme': 'solarized' }
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
 
+" vim-go
+let g:go_disable_autoinstall = 1
+
 " Use git-stripspace
 function! StripWhitespace()
   let l = line(".")
