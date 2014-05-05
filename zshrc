@@ -54,6 +54,7 @@ alias serve='ruby -run -e httpd . -p 9090'
 alias venv='source ./virtualenv/bin/activate'
 alias b='bundle exec'
 alias s='b spring'
+alias runtest='b ruby -I ./test'
 alias irb='irb -r "irb/completion"'
 
 # Get rid of autocorrection
