@@ -24,7 +24,7 @@ Bundle "tpope/vim-fugitive"
 Bundle "kchmck/vim-coffee-script"
 Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "fatih/vim-go"
+Bundle "jnwhiteh/vim-golang"
 Bundle "plasticboy/vim-markdown"
 
 " Themes
