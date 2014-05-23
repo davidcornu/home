@@ -40,6 +40,10 @@ set visualbell t_vb=
 let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlP"
 
+" Use ag instead of find for CtrlP
+" https://github.com/orenmazor/dotfiles/blob/f5e607bd571c460e18f437e6ad5668fcad7cdcc5/.vimrc#L64
+let g:ctrlp_user_command= 'ag %s -l --nocolor -g ""'
+
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
 
