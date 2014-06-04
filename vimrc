@@ -26,6 +26,7 @@ Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "jnwhiteh/vim-golang"
 Bundle "plasticboy/vim-markdown"
+Bundle "elzr/vim-json"
 
 " Themes
 Bundle "altercation/vim-colors-solarized"
