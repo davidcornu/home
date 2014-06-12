@@ -127,7 +127,7 @@ noremap \ :TComment<CR>
 nnoremap Y y$
 
 " Strip whitespace before saving
-autocmd BufWritePre * call StripWhitespace()
+" autocmd BufWritePre * call StripWhitespace()
 
 " Customize Ag
 " let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
