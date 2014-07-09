@@ -56,6 +56,7 @@ alias b='bundle exec'
 alias s='b spring'
 alias runtest='b ruby -I ./test'
 alias irb='irb -r "irb/completion"'
+alias wat='TDD=0 DEBUG=1 SKIP_BOOTSTRAP=1 LINEMAN_AUTO_START=false'
 
 # Get rid of autocorrection
 unsetopt correct_all
