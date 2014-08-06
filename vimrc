@@ -27,6 +27,7 @@ Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "plasticboy/vim-markdown"
 Bundle "elzr/vim-json"
 Bundle "Blackrush/vim-gocode"
+Bundle "rstacruz/sparkup"
 
 " Themes
 Bundle "altercation/vim-colors-solarized"
