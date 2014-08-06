@@ -5,3 +5,4 @@ nohup.out
 node_modules
 .env
 virtualenv
+gin-bin
