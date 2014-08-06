@@ -24,9 +24,9 @@ Bundle "tpope/vim-fugitive"
 Bundle "kchmck/vim-coffee-script"
 Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "jnwhiteh/vim-golang"
 Bundle "plasticboy/vim-markdown"
 Bundle "elzr/vim-json"
+Bundle "Blackrush/vim-gocode"
 
 " Themes
 Bundle "altercation/vim-colors-solarized"
@@ -54,8 +54,9 @@ let g:lightline = { 'colorscheme': 'solarized' }
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
 
-" vim-go
-let g:go_disable_autoinstall = 1
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1
 
 " Use git-stripspace
 function! StripWhitespace()
@@ -129,13 +130,13 @@ nnoremap Y y$
 " Strip whitespace before saving
 " autocmd BufWritePre * call StripWhitespace()
 
-" Customize Ag
-" let g:agprg="ag --column --nocolor --nogroup --literal --smart-case"
-
 " General settings
 set encoding=utf-8
 syntax on
 filetype plugin indent on
+
+" Autocompletion
+set omnifunc=syntaxcomplete#Complete
 
 " Convenience
 set nobackup noswapfile
