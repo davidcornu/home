@@ -49,6 +49,18 @@ alias cleanup-remote-branches='git remote prune origin'
 alias cleanup-local-branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias vim-conflicts='vim $(git diff-files --name-only -0)'
 
+function strip-diff {
+  (
+    set -e
+    git diff-files --name-only -0 | while read line; do
+      target=$(tempfile)
+      git stripspace < "$line" > "$target"
+      cat "$target" > "$line"
+      rm "$target"
+    done
+  )
+}
+
 # Misc
 alias serve='ruby -run -e httpd . -p 9090'
 alias venv='source ./virtualenv/bin/activate'
@@ -78,9 +90,11 @@ fi
 export EDITOR=vim
 
 # Quick Vagrant
-v(){ ( cd ~/vagrant && vagrant $* ) }
+function v { (
+  cd ~/vagrant && vagrant $* )
+}
 
-dev(){
+function dev {
   (
     set -e
     cd ~/vagrant
