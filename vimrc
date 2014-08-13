@@ -137,7 +137,7 @@ syntax on
 filetype plugin indent on
 
 " Autocompletion
-set omnifunc=syntaxcomplete#Complete
+autocmd FileType go set omnifunc=syntaxcomplete#Complete
 
 " Convenience
 set nobackup noswapfile
