@@ -56,7 +56,7 @@ let g:lightline = { 'colorscheme': 'solarized' }
 let g:vim_markdown_folding_disabled=1
 
 " Supertab
-let g:SuperTabDefaultCompletionType = "context"
+autocmd FileType go let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
 
 " Use git-stripspace
@@ -137,7 +137,7 @@ syntax on
 filetype plugin indent on
 
 " Autocompletion
-autocmd FileType go set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete#Complete
 
 " Convenience
 set nobackup noswapfile
