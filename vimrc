@@ -156,8 +156,8 @@ set hlsearch incsearch
 set ignorecase smartcase
 
 " Display
-set mouse=a
-set mousehide
+" set mouse=a
+" set mousehide
 set laststatus=2
 set showcmd
 set number
