@@ -21,6 +21,7 @@ Bundle "terryma/vim-multiple-cursors"
 Bundle "tpope/vim-fugitive"
 
 " Additional language support
+Bundle "vim-ruby/vim-ruby"
 Bundle "kchmck/vim-coffee-script"
 Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
