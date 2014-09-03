@@ -19,6 +19,7 @@ Bundle "Townk/vim-autoclose"
 Bundle "itchyny/lightline.vim"
 Bundle "terryma/vim-multiple-cursors"
 Bundle "tpope/vim-fugitive"
+Bundle "wikitopian/hardmode"
 
 " Additional language support
 Bundle "vim-ruby/vim-ruby"
@@ -59,6 +60,10 @@ let g:vim_markdown_folding_disabled=1
 " Supertab
 autocmd FileType go let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
+
+" hardmode
+let g:HardMode_level = 'wannabe'
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 " Use git-stripspace
 function! StripWhitespace()
