@@ -121,7 +121,7 @@ let mapleader=","
 nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleNumbers()<CR>
-nnoremap <Leader>w :call StripWhitespace()<CR>
+nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
 nnoremap <Leader>q :call ToggleQuickfix()<CR>
 
 " Don't trigger jump list with tab
