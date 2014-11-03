@@ -17,7 +17,6 @@ Bundle "Lokaltog/vim-easymotion"
 Bundle "airblade/vim-gitgutter"
 Bundle "Townk/vim-autoclose"
 Bundle "itchyny/lightline.vim"
-Bundle "terryma/vim-multiple-cursors"
 Bundle "tpope/vim-fugitive"
 Bundle "wikitopian/hardmode"
 
