@@ -6,7 +6,7 @@ call vundle#rc()
 " Packages
 Bundle "gmarik/vundle"
 Bundle "scrooloose/nerdtree"
-Bundle "kien/ctrlp.vim"
+Bundle "ctrlpvim/ctrlp.vim"
 Bundle "godlygeek/tabular"
 Bundle "tomtom/tcomment_vim"
 Bundle "kana/vim-textobj-user"
