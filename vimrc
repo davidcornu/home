@@ -30,9 +30,6 @@ Bundle "elzr/vim-json"
 Bundle "Blackrush/vim-gocode"
 Bundle "rstacruz/sparkup"
 
-" Themes
-Bundle "altercation/vim-colors-solarized"
-
 set nocompatible
 
 " Peace and quiet
@@ -76,9 +73,6 @@ endfunction
 
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
-
-" lightline
-let g:lightline = { 'colorscheme': 'solarized' }
 
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
@@ -218,6 +212,5 @@ if has('clipboard')
 endif
 
 " Theme
-set t_Co=16 " Use the terminal's colors to get true colors
+set t_Co=16
 set background=dark
-colorscheme solarized
