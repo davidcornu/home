@@ -25,3 +25,5 @@ $ cd ~/dotfiles
 $ git pull
 $ ./bootstrap.sh
 ```
+
+Test
