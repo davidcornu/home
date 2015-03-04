@@ -100,6 +100,6 @@ function dev {
     set -e
     cd ~/vagrant
     if vagrant status | grep -q 'powered off'; then vagrant up; fi
-    vagrant ssh -- -t 'cd ~/src/shopify && exec $SHELL --login'
+    vagrant ssh -- -t 'cd ~/src/shopify; exec $SHELL --login'
   )
 }
