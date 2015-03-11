@@ -96,6 +96,14 @@ function! StripWhitespace()
   call cursor(l, c)
 endfunction
 
+" Run goimports on current file
+function! GoImports()
+  let l = line(".")
+  let c = col(".")
+  %!goimports
+  call cursor(l, c)
+endfunction
+
 " Toggle relative numbers
 function! ToggleNumbers()
   if (&relativenumber == 1)
@@ -146,6 +154,7 @@ nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
 nnoremap <Leader>q :call ToggleQuickfix()<CR>
+nnoremap <Leader>i :call GoImports()<CR>
 
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
@@ -159,6 +168,9 @@ nnoremap Y y$
 
 " Strip whitespace before saving
 " autocmd BufWritePre * call StripWhitespace()
+
+" Run goimports on files before saving
+autocmd BufWritePre *.go call GoImports()
 
 " General settings
 set encoding=utf-8
