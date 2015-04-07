@@ -72,7 +72,7 @@ alias venv='source ./virtualenv/bin/activate'
 alias s='b spring'
 alias runtest='b ruby -I ./test'
 alias irb='irb -r "irb/completion"'
-alias wat='TDD=0 DEBUG=1 SKIP_BOOTSTRAP=1'
+alias wat='TDD=0 SKIP_BOOTSTRAP=1 PRY=1'
 alias clear-elasticsearch='curl -X DELETE "http://localhost:9200/*/"'
 
 # Get rid of autocorrection
