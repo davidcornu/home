@@ -48,6 +48,7 @@ alias delete-remote-branch='git push origin --delete'
 alias cleanup-remote-branches='git remote prune origin'
 alias cleanup-local-branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias vim-conflicts='vim $(git diff-files --name-only -0)'
+alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 
 function strip-diff {
   (
