@@ -160,6 +160,9 @@ nnoremap <Leader>i :call GoImports()<CR>
 nnoremap <Tab> <Nop>
 nnoremap <C-I> <Tab>
 
+" lol ex mode
+map Q <Nop>
+
 " Quick comment toggling
 noremap \ :TComment<CR>
 
