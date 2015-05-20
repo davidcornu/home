@@ -80,6 +80,10 @@ function inspect-cert {
   openssl x509 -noout -text -in $1
 }
 
+function inspect-csr {
+  openssl req -noout -text -in $1
+}
+
 # Get rid of autocorrection
 unsetopt correct_all
 
