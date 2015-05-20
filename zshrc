@@ -76,6 +76,10 @@ alias irb='irb -r "irb/completion"'
 alias wat='TDD=0 SKIP_BOOTSTRAP=1 PRY=1'
 alias clear-elasticsearch='curl -X DELETE "http://localhost:9200/*/"'
 
+function inspect-cert {
+  openssl x509 -noout -text -in $1
+}
+
 # Get rid of autocorrection
 unsetopt correct_all
 
