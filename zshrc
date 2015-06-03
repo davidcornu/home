@@ -26,7 +26,7 @@ then
   # Aliases
   alias mou='open -a mou'
   alias subl='open -a "Sublime Text"'
-  alias marked='open -a "Marked"'
+  alias marked='open -a "Marked 2"'
   alias gitbox='open -a "Gitbox"'
 
   # Add Homebrew to PATH
