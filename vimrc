@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 Bundle "scrooloose/nerdtree"
 Bundle "ctrlpvim/ctrlp.vim"
+Bundle "jlanzarotta/bufexplorer"
 Bundle "godlygeek/tabular"
 Bundle "tomtom/tcomment_vim"
 Bundle "kana/vim-textobj-user"
@@ -155,6 +156,7 @@ nnoremap <Leader>r :call ToggleNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
 nnoremap <Leader>q :call ToggleQuickfix()<CR>
 nnoremap <Leader>i :call GoImports()<CR>
+nnoremap <Leader>b :BufExplorer<CR>
 
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
