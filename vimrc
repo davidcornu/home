@@ -30,6 +30,7 @@ Bundle "plasticboy/vim-markdown"
 Bundle "elzr/vim-json"
 Bundle "Blackrush/vim-gocode"
 Bundle "rstacruz/sparkup"
+Bundle "evanmiller/nginx-vim-syntax"
 
 set nocompatible
 
