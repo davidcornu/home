@@ -32,6 +32,9 @@ Bundle "Blackrush/vim-gocode"
 Bundle "rstacruz/sparkup"
 Bundle "evanmiller/nginx-vim-syntax"
 
+" Colour schemes
+Bundle "tomasr/molokai"
+
 set nocompatible
 
 " Peace and quiet
@@ -44,7 +47,7 @@ let g:ctrlp_cmd = "CtrlP"
 
 " Use ag instead of find for CtrlP
 " https://github.com/orenmazor/dotfiles/blob/f5e607bd571c460e18f437e6ad5668fcad7cdcc5/.vimrc#L64
-let g:ctrlp_user_command= 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " Use https://github.com/burke/matcher if installed
 let g:path_to_matcher = "/usr/local/bin/matcher"
@@ -183,6 +186,12 @@ set encoding=utf-8
 syntax on
 filetype plugin indent on
 
+" Colours
+set background=dark
+let t_Co = 265
+let g:rehash256 = 1
+colorscheme molokai
+
 " Autocompletion
 set omnifunc=syntaxcomplete#Complete
 
@@ -228,7 +237,3 @@ if has('clipboard')
     set clipboard=unnamed
   endif
 endif
-
-" Theme
-set t_Co=16
-set background=dark
