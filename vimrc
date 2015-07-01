@@ -31,6 +31,7 @@ Bundle "elzr/vim-json"
 Bundle "Blackrush/vim-gocode"
 Bundle "rstacruz/sparkup"
 Bundle "evanmiller/nginx-vim-syntax"
+Bundle "lambdatoast/elm.vim"
 
 " Colour schemes
 Bundle "tomasr/molokai"
