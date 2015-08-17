@@ -10,6 +10,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Pure theme
+source ~ZSH_CUSTOM/plugins/pure/async.zsh
 source ~ZSH_CUSTOM/plugins/pure/pure.zsh
 PURE_GIT_PULL=0
 
