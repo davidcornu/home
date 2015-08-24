@@ -65,7 +65,7 @@ function strip-diff {
 
 # Simpler Bundler
 function b {
-  { bundle check || bundle install } && bundle exec $*
+  { bundle check > /dev/null || bundle install } && bundle exec $*
 }
 
 # Misc
