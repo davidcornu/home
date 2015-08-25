@@ -111,9 +111,9 @@ function! GoImports()
 endfunction
 
 " Toggle relative numbers
-function! ToggleNumbers()
+function! ToggleRelativeNumbers()
   if (&relativenumber == 1)
-    set number
+    set norelativenumber
   else
     set relativenumber
   endif
@@ -145,7 +145,7 @@ command! -complete=file -nargs=+ Shell call s:RunShellCommand(<q-args>)
 let mapleader=","
 nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
-nnoremap <Leader>r :call ToggleNumbers()<CR>
+nnoremap <Leader>r :call ToggleRelativeNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
 nnoremap <Leader>i :call GoImports()<CR>
 nnoremap <Leader>b :BufExplorer<CR>
