@@ -119,18 +119,6 @@ function! ToggleNumbers()
   endif
 endfunction
 
-" Toggle the quickfix list
-function! ToggleQuickfix()
-  if exists("g:qfix_win")
-    cclose
-    unlet g:qfix_win
-  else
-    copen
-    wincmd J
-    let g:qfix_win = bufnr("$")
-  end
-endfunction
-
 " Run a Shell command and pipe the output to a buffer
 " https://github.com/spf13/spf13-vim/blob/7d48f769d1c991f82beee18a7f644b4ed351e5ce/.vimrc#L963-L981
 function! s:RunShellCommand(cmdline)
@@ -159,7 +147,6 @@ nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
-nnoremap <Leader>q :call ToggleQuickfix()<CR>
 nnoremap <Leader>i :call GoImports()<CR>
 nnoremap <Leader>b :BufExplorer<CR>
 
