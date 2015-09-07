@@ -33,6 +33,7 @@ Bundle "rstacruz/sparkup"
 Bundle "evanmiller/nginx-vim-syntax"
 Bundle "lambdatoast/elm.vim"
 Bundle "rust-lang/rust.vim"
+Bundle "cespare/vim-toml"
 
 " Colour schemes
 Bundle "tomasr/molokai"
