@@ -32,6 +32,7 @@ Bundle "Blackrush/vim-gocode"
 Bundle "rstacruz/sparkup"
 Bundle "evanmiller/nginx-vim-syntax"
 Bundle "lambdatoast/elm.vim"
+Bundle "rust-lang/rust.vim"
 
 " Colour schemes
 Bundle "tomasr/molokai"
@@ -102,6 +103,13 @@ function! StripWhitespace()
   call cursor(l, c)
 endfunction
 
+function! JsFmt()
+  let l = line(".")
+  let c = col(".")
+  %!jsfmt
+  call cursor(l, c)
+endfunction
+
 " Run goimports on current file
 function! GoImports()
   let l = line(".")
@@ -147,6 +155,7 @@ nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleRelativeNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
+nnoremap <Leader>j :call JsFmt()<CR>
 nnoremap <Leader>i :call GoImports()<CR>
 nnoremap <Leader>b :BufExplorer<CR>
 
