@@ -36,7 +36,7 @@ Bundle "rust-lang/rust.vim"
 Bundle "cespare/vim-toml"
 
 " Colour schemes
-Bundle "tomasr/molokai"
+Bundle "sjl/badwolf"
 
 set nocompatible
 
@@ -187,8 +187,7 @@ filetype plugin indent on
 " Colours
 set background=dark
 let t_Co = 265
-let g:rehash256 = 1
-colorscheme molokai
+colorscheme badwolf
 
 " Autocompletion
 set omnifunc=syntaxcomplete#Complete
