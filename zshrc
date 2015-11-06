@@ -33,7 +33,7 @@ then
   # Add Homebrew to PATH
   if [ -d "/usr/local/Cellar" ]
   then
-    PATH="/usr/local/bin:$PATH"
+    PATH="/usr/local/bin:/usr/local/sbin:$PATH"
   fi
 
   # Add Postgres.app to PATH
