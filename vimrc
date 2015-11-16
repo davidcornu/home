@@ -96,6 +96,9 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 let g:HardMode_level = 'wannabe'
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
+" Use the dot command in normal mode
+xnoremap . :norm.<CR>
+
 " Use git-stripspace
 function! StripWhitespace()
   let l = line(".")
