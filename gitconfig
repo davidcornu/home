@@ -24,3 +24,5 @@
 	prompt = false
 [merge]
 	tool = Kaleidoscope
+[alias]
+	pom = pull origin master
