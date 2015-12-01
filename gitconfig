@@ -26,3 +26,4 @@
 	tool = Kaleidoscope
 [alias]
 	pom = pull origin master
+	com = checkout master
