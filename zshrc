@@ -39,7 +39,7 @@ then
   # Add Postgres.app to PATH
   if [ -d /Applications/Postgres.app ]
   then
-    PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+    PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
   fi
 fi
 
