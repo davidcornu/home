@@ -20,6 +20,7 @@ Bundle "Townk/vim-autoclose"
 Bundle "itchyny/lightline.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "wikitopian/hardmode"
+Bundle "nelstrom/vim-visual-star-search"
 
 " Additional language support
 Bundle "vim-ruby/vim-ruby"
