@@ -13,14 +13,12 @@ Bundle "tomtom/tcomment_vim"
 Bundle "kana/vim-textobj-user"
 Bundle "rking/ag.vim"
 Bundle "tpope/vim-abolish"
-Bundle "ervandew/supertab"
-Bundle "Lokaltog/vim-easymotion"
 Bundle "airblade/vim-gitgutter"
 Bundle "Townk/vim-autoclose"
 Bundle "itchyny/lightline.vim"
 Bundle "tpope/vim-fugitive"
-Bundle "wikitopian/hardmode"
 Bundle "nelstrom/vim-visual-star-search"
+Bundle "Valloric/YouCompleteMe"
 
 " Additional language support
 Bundle "vim-ruby/vim-ruby"
@@ -29,7 +27,6 @@ Bundle "elixir-lang/vim-elixir"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "plasticboy/vim-markdown"
 Bundle "elzr/vim-json"
-Bundle "Blackrush/vim-gocode"
 Bundle "rstacruz/sparkup"
 Bundle "evanmiller/nginx-vim-syntax"
 Bundle "lambdatoast/elm.vim"
@@ -89,14 +86,6 @@ let g:vim_markdown_folding_disabled = 1
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
-
-" Supertab
-autocmd FileType go let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabClosePreviewOnPopupClose = 1
-
-" hardmode
-let g:HardMode_level = 'wannabe'
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 " Use the dot command in normal mode
 xnoremap . :norm.<CR>
@@ -193,9 +182,6 @@ filetype plugin indent on
 set background=dark
 let t_Co = 265
 colorscheme badwolf
-
-" Autocompletion
-set omnifunc=syntaxcomplete#Complete
 
 " Convenience
 set nobackup noswapfile
