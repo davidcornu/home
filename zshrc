@@ -89,34 +89,28 @@ function inspect-csr {
 # Get rid of autocorrection
 unsetopt correct_all
 
-# Load rbenv
-if [ -d ~/.rbenv ]
-then
-  PATH=~/.rbenv/bin:$PATH
-  eval "$(rbenv init -)"
-fi
+function load-rbenv {
+  if [ -d ~/.rbenv ]
+  then
+    export PATH=~/.rbenv/bin:$PATH
+    eval "$(rbenv init -)"
+  fi
+}
 
-# Load nvm
-if [ -s ~/.nvm/nvm.sh ]
+function load-nvm {
+  if [ -s ~/.nvm/nvm.sh ]
+  then
+    source ~/.nvm/nvm.sh
+  fi
+}
+
+if [ -f /opt/dev/dev.sh ]
 then
-  source ~/.nvm/nvm.sh
+  source /opt/dev/dev.sh
+else
+  load-rbenv
+  load-nvm
 fi
 
 # Set editor
 export EDITOR=vim
-
-# Quick Vagrant
-function v {
-  (
-    cd ~/vagrant && vagrant $*
-  )
-}
-
-function dev {
-  (
-    set -e
-    cd ~/vagrant
-    if vagrant status | grep -q 'powered off'; then vagrant up; fi
-    vagrant ssh -- -t 'cd ~/src/shopify; exec $SHELL --login'
-  )
-}
