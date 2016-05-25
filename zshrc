@@ -44,18 +44,13 @@ then
 fi
 
 # Git commands
-alias delete-local-branch='git branch -D'
-alias delete-remote-branch='git push origin --delete'
-alias cleanup-remote-branches='git remote prune origin'
-alias cleanup-local-branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
-alias vim-conflicts='vim $(git diff-files --name-only -0)'
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
-
 function strip-diff {
   (
     set -e
+    cd "$(git rev-parse --show-toplevel)"
     git diff-files --name-only -0 | while read line; do
-      target=$(tempfile)
+      target="/tmp/$(git hash-object -- $line)-stripped"
       git stripspace < "$line" > "$target"
       cat "$target" > "$line"
       rm "$target"

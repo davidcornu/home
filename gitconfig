@@ -30,3 +30,6 @@
 	com = checkout master
 	fresh-branch = "!f() { if [ -z $1 ]; then echo \"Please specify branch name\" && exit 1; fi; git fetch origin master && git branch $1 origin/master && git checkout $1; }; f"
 	sync-branch = "!git fetch origin master && git rebase origin/master"
+	cleanup-remote-branches = remote prune origin
+	cleanup-local-branches = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
+	edit-changes = "!$EDITOR $(git diff-files --name-only -0)"
