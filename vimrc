@@ -170,6 +170,11 @@ nnoremap Y y$
 " Strip whitespace before saving
 " autocmd BufWritePre * call StripWhitespace()
 
+" Show hidden chars
+" http://vimcasts.org/episodes/show-invisibles/
+set listchars=tab:▸\ ,eol:¬
+nmap <leader>h :set list!<CR>
+
 " Run goimports on files before saving
 autocmd BufWritePre *.go call GoImports()
 
