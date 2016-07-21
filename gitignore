@@ -7,3 +7,4 @@ node_modules
 virtualenv
 gin-bin
 scratch.*
+.idea
