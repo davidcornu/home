@@ -36,7 +36,7 @@ Bundle "rhysd/vim-crystal"
 Bundle "leafgarland/typescript-vim"
 
 " Colour schemes
-Bundle "sjl/badwolf"
+Bundle "trusktr/seti.vim"
 
 set nocompatible
 
@@ -187,7 +187,7 @@ filetype plugin indent on
 " Colours
 set background=dark
 let t_Co = 265
-colorscheme badwolf
+colorscheme seti
 
 " Convenience
 set nobackup noswapfile
