@@ -213,7 +213,8 @@ set number
 set hidden
 set cursorline
 set fillchars=""
-set nowrap
+" set nowrap
+set wrap linebreak nolist
 set wildmenu wildmode=list:longest,full
 set title
 set scrolloff=3
