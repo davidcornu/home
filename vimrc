@@ -9,12 +9,10 @@ Bundle "scrooloose/nerdtree"
 Bundle "ctrlpvim/ctrlp.vim"
 Bundle "jlanzarotta/bufexplorer"
 Bundle "godlygeek/tabular"
-Bundle "tomtom/tcomment_vim"
+Bundle "tpope/vim-commentary"
 Bundle "kana/vim-textobj-user"
 Bundle "rking/ag.vim"
-Bundle "tpope/vim-abolish"
 Bundle "airblade/vim-gitgutter"
-Bundle "jiangmiao/auto-pairs"
 Bundle "itchyny/lightline.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "nelstrom/vim-visual-star-search"
@@ -163,7 +161,7 @@ nnoremap <C-I> <Tab>
 map Q <Nop>
 
 " Quick comment toggling
-noremap \ :TComment<CR>
+noremap \ :Commentary<CR>
 
 " Make Y consistent with C/D
 nnoremap Y y$
