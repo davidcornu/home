@@ -8,3 +8,4 @@ virtualenv
 gin-bin
 scratch.*
 .idea
+.dev
