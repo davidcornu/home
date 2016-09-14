@@ -17,6 +17,7 @@ Bundle "itchyny/lightline.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "nelstrom/vim-visual-star-search"
 Bundle "Valloric/YouCompleteMe"
+Bundle "tpope/vim-surround"
 
 " Additional language support
 Bundle "vim-ruby/vim-ruby"
