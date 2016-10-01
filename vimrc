@@ -33,6 +33,7 @@ Bundle "rust-lang/rust.vim"
 Bundle "cespare/vim-toml"
 Bundle "rhysd/vim-crystal"
 Bundle "leafgarland/typescript-vim"
+Bundle "pangloss/vim-javascript"
 
 " Colour schemes
 Bundle "trusktr/seti.vim"
