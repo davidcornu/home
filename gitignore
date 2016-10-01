@@ -9,3 +9,4 @@ gin-bin
 scratch.*
 .idea
 .dev
+npm-debug.log
