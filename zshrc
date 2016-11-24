@@ -43,6 +43,9 @@ then
   fi
 fi
 
+# Add Cargo binaries to PATH
+PATH="$HOME/.cargo/bin:$PATH"
+
 # Git commands
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 function strip-diff {
