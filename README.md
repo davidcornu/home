@@ -25,3 +25,8 @@ $ cd ~/dotfiles
 $ git pull
 $ ./bootstrap.sh
 ```
+
+## Other useful tools
+
+- https://github.com/BurntSushi/ripgrep
+- https://github.com/jonas/tig
