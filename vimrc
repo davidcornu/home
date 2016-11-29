@@ -11,7 +11,7 @@ Bundle "jlanzarotta/bufexplorer"
 Bundle "godlygeek/tabular"
 Bundle "tpope/vim-commentary"
 Bundle "kana/vim-textobj-user"
-Bundle "rking/ag.vim"
+Bundle "mileszs/ack.vim"
 Bundle "airblade/vim-gitgutter"
 Bundle "itchyny/lightline.vim"
 Bundle "tpope/vim-fugitive"
@@ -48,9 +48,11 @@ set visualbell t_vb=
 let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlP"
 
-" Use ag instead of find for CtrlP
-" https://github.com/orenmazor/dotfiles/blob/f5e607bd571c460e18f437e6ad5668fcad7cdcc5/.vimrc#L64
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" Use rg instead of find
+let g:ctrlp_user_command = "rg '' %s -l"
+
+" Use rg instead of ack
+let g:ackprg = 'rg --vimgrep'
 
 " Use https://github.com/burke/matcher if installed
 let g:path_to_matcher = "/usr/local/bin/matcher"
