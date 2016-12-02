@@ -1,0 +1,5 @@
+set clipboard+=unnamed
+set hlsearch
+set incsearch
+set surround
+
