@@ -1,5 +1,7 @@
 set clipboard+=unnamed
 set hlsearch
 set incsearch
+set ignorecase
+set visualbell
 set surround
 
