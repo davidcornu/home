@@ -35,3 +35,4 @@
 	cleanup-local-branches = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
 	edit-changes = "!$EDITOR $(git diff-files --name-only -0)"
 	recent-branches = "!git reflog --oneline | ruby -e \"puts \\$stdin.each_line.map { |l| match = l.match(/moving from (.*) to (.*)/); match ? match[1] : nil }.compact.uniq.take(5)\""
+	yolo-revert="!~/dotfiles/utils/revert.sh"
