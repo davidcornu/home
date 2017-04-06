@@ -13,10 +13,12 @@
 	rebase = true
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "icdiff"]
+	cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [difftool]
 	prompt = false
 [diff]
-	tool = Kaleidoscope
+	tool = icdiff
 	compactionHeuristic = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
