@@ -116,3 +116,6 @@ fi
 
 # Set editor
 export EDITOR=vim
+
+# Use FZF if it's around
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
