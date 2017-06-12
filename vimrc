@@ -59,6 +59,11 @@ let g:vim_markdown_folding_disabled = 1
 " vim-json
 let g:vim_json_syntax_conceal = 0
 
+" vim-ruby
+let g:ruby_indent_access_modifier_style = 'normal'
+let g:ruby_indent_assignment_style = 'variable'
+let g:ruby_indent_block_style = 'do'
+
 " Use the dot command in normal mode
 xnoremap . :norm.<CR>
 
