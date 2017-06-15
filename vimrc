@@ -52,6 +52,7 @@ nnoremap <C-p> :FZF<CR>
 
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
