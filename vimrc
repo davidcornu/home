@@ -76,10 +76,10 @@ function! StripWhitespace()
   call cursor(l, c)
 endfunction
 
-function! JsFmt()
+function! FormatJavaScript()
   let l = line(".")
   let c = col(".")
-  %!jsfmt
+  %!prettier --stdin --trailing-comma=es5 --single-quote --no-bracket-spacing
   call cursor(l, c)
 endfunction
 
@@ -128,7 +128,7 @@ nnoremap <Leader>c :nohl<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>r :call ToggleRelativeNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
-nnoremap <Leader>j :call JsFmt()<CR>
+nnoremap <Leader>j :call FormatJavaScript()<CR>
 nnoremap <Leader>i :call GoImports()<CR>
 nnoremap <Leader>b :BufExplorer<CR>
 
