@@ -64,6 +64,8 @@ header "Setting up config files"
 
 # Config files
 ensure_symlink ~/dotfiles/vimrc ~/.vimrc
+ensure_directory ~/.config/nvim
+ensure_symlink ~/dotfiles/nvimrc ~/.config/nvim/init.vim
 ensure_symlink ~/dotfiles/ideavimrc ~/.ideavimrc
 ensure_symlink ~/dotfiles/zshrc ~/.zshrc
 ensure_symlink ~/dotfiles/gitconfig ~/.gitconfig
@@ -79,7 +81,10 @@ ensure_repo ~/.oh-my-zsh/custom/plugins/pure git@github.com:sindresorhus/pure.gi
 ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:zsh-users/zsh-syntax-highlighting.git 
 
 # Vim
-ensure_repo ~/.vim/bundle/vundle git@github.com:gmarik/vundle.git
+ensure_repo ~/.vim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
+
+# NeoVim
+ensure_repo ~/.config/nvim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
 
 # Ruby
 ensure_repo ~/.rbenv git@github.com:sstephenson/rbenv.git
