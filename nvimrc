@@ -122,6 +122,9 @@ nnoremap <Leader>b :BufExplorer<CR>
 nnoremap <Tab> <Nop>
 nnoremap <C-I> <Tab>
 
+" <esc> out of terminal
+tnoremap <Esc> <C-\><C-n>
+
 " lol ex mode
 map Q <Nop>
 
