@@ -79,6 +79,7 @@ alias irb='irb -r "irb/completion"'
 alias wat='TDD=0 SKIP_BOOTSTRAP=1 PRY=1 DONT_HELP_MY_COWORKERS_MAKE_EVIDENCE_BASED_DECISIONS=1 DISABLE_SPRING=1 DISABLE_PEEK=1'
 alias clear-elasticsearch='curl -X DELETE "http://localhost:9200/*/"'
 alias kill-railgun='railgun status -a | tail -n +2 | cut -d " " -f1 | xargs -n 1 railgun stop'
+alias vim='nvim'
 
 function inspect-cert {
   openssl x509 -noout -text -in $1
