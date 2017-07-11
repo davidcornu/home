@@ -1,42 +1,45 @@
-" https://github.com/gmarik/vundle
+" https://github.com/VundleVim/Vundle.vim
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Packages
-Bundle "gmarik/vundle"
-Bundle "scrooloose/nerdtree"
-Bundle "junegunn/fzf"
-Bundle "jlanzarotta/bufexplorer"
-Bundle "godlygeek/tabular"
-Bundle "tpope/vim-commentary"
-Bundle "kana/vim-textobj-user"
-Bundle "mileszs/ack.vim"
-Bundle "airblade/vim-gitgutter"
-Bundle "itchyny/lightline.vim"
-Bundle "tpope/vim-fugitive"
-Bundle "nelstrom/vim-visual-star-search"
-Bundle "Valloric/YouCompleteMe"
-Bundle "tpope/vim-surround"
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'junegunn/fzf'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-commentary'
+Plugin 'kana/vim-textobj-user'
+Plugin 'mileszs/ack.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-surround'
 
 " Additional language support
-Bundle "vim-ruby/vim-ruby"
-Bundle "kchmck/vim-coffee-script"
-Bundle "elixir-lang/vim-elixir"
-Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "plasticboy/vim-markdown"
-Bundle "elzr/vim-json"
-Bundle "rstacruz/sparkup"
-Bundle "evanmiller/nginx-vim-syntax"
-Bundle "lambdatoast/elm.vim"
-Bundle "rust-lang/rust.vim"
-Bundle "cespare/vim-toml"
-Bundle "rhysd/vim-crystal"
-Bundle "leafgarland/typescript-vim"
-Bundle "pangloss/vim-javascript"
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'elzr/vim-json'
+Plugin 'rstacruz/sparkup'
+Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'cespare/vim-toml'
+Plugin 'rhysd/vim-crystal'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 
 " Colour schemes
-Bundle "trusktr/seti.vim"
+Plugin 'trusktr/seti.vim'
+
+call vundle#end()
+filetype plugin indent on
 
 set nocompatible
 
