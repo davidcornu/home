@@ -144,6 +144,7 @@ autocmd BufWritePre *.go call GoImports()
 
 " Colours
 set background=dark
+set termguicolors
 colorscheme seti
 
 " Convenience
