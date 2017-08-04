@@ -37,10 +37,17 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 
 " Colour schemes
-Plugin 'trusktr/seti.vim'
+" Plugin 'trusktr/seti.vim'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 filetype plugin indent on
+
+" Colours
+set background=dark
+set termguicolors
+let g:lightline = { 'colorscheme': 'jellybeans' }
+colorscheme jellybeans
 
 " Peace and quiet
 set noerrorbells
@@ -141,11 +148,6 @@ nmap <leader>h :set list!<CR>
 
 " Run goimports on files before saving
 autocmd BufWritePre *.go call GoImports()
-
-" Colours
-set background=dark
-set termguicolors
-colorscheme seti
 
 " Convenience
 set nobackup noswapfile
