@@ -10,3 +10,4 @@ scratch.*
 .idea
 .dev
 npm-debug.log
+yarn-error.log

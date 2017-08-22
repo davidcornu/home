@@ -18,7 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'tpope/vim-surround'
-Plugin 'neomake/neomake'
+Plugin 'wellle/targets.vim'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
