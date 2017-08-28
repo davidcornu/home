@@ -80,6 +80,7 @@ alias wat='TDD=0 SKIP_BOOTSTRAP=1 PRY=1 DONT_HELP_MY_COWORKERS_MAKE_EVIDENCE_BAS
 alias clear-elasticsearch='curl -X DELETE "http://localhost:9200/*/"'
 alias kill-railgun='railgun status -a | tail -n +2 | cut -d " " -f1 | xargs -n 1 railgun stop'
 alias vim='nvim'
+alias clear-yarn="ruby -r json -r fileutils -e \"JSON.parse(File.read('config/npm_packages.json')).each { |dir| FileUtils.rm_rf(dir + '/node_modules') }\" && yarn cache clean"
 
 function inspect-cert {
   openssl x509 -noout -text -in $1
