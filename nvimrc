@@ -15,6 +15,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'tpope/vim-surround'
@@ -155,6 +156,7 @@ set nobackup noswapfile
 " text editing
 set ts=2 sts=2 sw=2 expandtab
 set textwidth=100
+set formatoptions-=tc " default is jtcroql
 
 " search
 set ignorecase smartcase
