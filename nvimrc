@@ -26,7 +26,6 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'elzr/vim-json'
 Plugin 'rstacruz/sparkup'
 Plugin 'evanmiller/nginx-vim-syntax'
@@ -156,7 +155,7 @@ set nobackup noswapfile
 " text editing
 set ts=2 sts=2 sw=2 expandtab
 set textwidth=100
-set formatoptions-=tc " default is jtcroql
+set formatoptions-=tcl " default is jtcroql
 
 " search
 set ignorecase smartcase
