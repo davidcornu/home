@@ -20,6 +20,7 @@ Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'tpope/vim-surround'
 Plugin 'wellle/targets.vim'
+Plugin 'machakann/vim-highlightedyank'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
@@ -156,6 +157,9 @@ set formatoptions-=tcl " default is jtcroql
 
 " search
 set ignorecase smartcase
+
+" live substitution
+set inccommand=split
 
 " Display
 set number
