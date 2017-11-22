@@ -39,7 +39,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
-filetype plugin indent on
+filetype plugin off
+filetype indent on
 
 " Colours
 set background=dark
@@ -66,9 +67,6 @@ nnoremap <C-p> :FZF<CR>
 " NERDTree
 nnoremap <C-d> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
-" vim-markdown
-let g:vim_markdown_folding_disabled = 1
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
@@ -151,9 +149,11 @@ autocmd BufWritePre *.go call GoImports()
 set nobackup noswapfile
 
 " text editing
-set ts=2 sts=2 sw=2 expandtab
-set textwidth=100
-set formatoptions-=tcl " default is jtcroql
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+set textwidth=0
+set formatoptions-=t " Auto-wrap text
+set formatoptions-=c " Auto-wrap comments
+set formatoptions-=l " Auto-wrap in insert mode
 
 " search
 set ignorecase smartcase
