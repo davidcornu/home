@@ -39,7 +39,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
-filetype plugin off
+filetype plugin on
 filetype indent on
 
 " Colours
@@ -75,6 +75,9 @@ let g:vim_json_syntax_conceal = 0
 let g:ruby_indent_access_modifier_style = 'normal'
 let g:ruby_indent_assignment_style = 'variable'
 let g:ruby_indent_block_style = 'do'
+
+" highlightedyank
+let g:highlightedyank_highlight_duration = 200
 
 " Use the dot command in normal mode
 xnoremap . :norm.<CR>
