@@ -21,6 +21,7 @@ Plugin 'Shougo/deoplete.nvim'
 Plugin 'tpope/vim-surround'
 Plugin 'wellle/targets.vim'
 Plugin 'machakann/vim-highlightedyank'
+Plugin 'kshenoy/vim-signature'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
