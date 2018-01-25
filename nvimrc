@@ -34,6 +34,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'smerrill/vcl-vim-plugin'
 
 " Colour schemes
 " Plugin 'trusktr/seti.vim'

@@ -72,9 +72,8 @@ function b {
 # Misc
 alias serve='ruby -run -e httpd . -p 9090'
 alias venv='source ./virtualenv/bin/activate'
-alias s='b spring'
 alias runtest='b ruby -I ./test'
-alias volmer='rubocop $(git diff-files --name-only -0)'
+alias volmer='b rubocop $(git diff-files --name-only -0)'
 alias irb='irb -r "irb/completion"'
 alias wat='TDD=0 SKIP_BOOTSTRAP=1 PRY=1 DONT_HELP_MY_COWORKERS_MAKE_EVIDENCE_BASED_DECISIONS=1 DISABLE_SPRING=1 DISABLE_PEEK=1'
 alias clear-elasticsearch='curl -X DELETE "http://localhost:9200/*/"'
