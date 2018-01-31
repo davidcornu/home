@@ -34,6 +34,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'smerrill/vcl-vim-plugin'
 
 " Colour schemes
@@ -49,6 +50,11 @@ set background=dark
 set termguicolors
 let g:lightline = { 'colorscheme': 'jellybeans' }
 colorscheme jellybeans
+
+" Render HTML attributes in italics
+highlight Comment gui=italic cterm=italic
+highlight htmlArg gui=italic cterm=italic
+highlight xmlAttrib gui=italic cterm=italic
 
 " Peace and quiet
 set noerrorbells
