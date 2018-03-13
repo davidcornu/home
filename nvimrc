@@ -22,6 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'wellle/targets.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'kshenoy/vim-signature'
+Plugin 'janko-m/vim-test'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
