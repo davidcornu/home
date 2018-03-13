@@ -36,7 +36,7 @@
 	cleanup-remote-branches = remote prune origin
 	cleanup-local-branches = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
 	edit-changes = "!$EDITOR $(git diff-files --name-only -0)"
-	recent-branches = "!git reflog --oneline | ruby -e \"puts \\$stdin.each_line.map { |l| match = l.match(/moving from (.*) to (.*)/); match ? match[1] : nil }.compact.uniq.take(5)\""
+	recent-branches = "!git for-each-ref --format='%(authoremail)%09%(refname)' --sort=-committerdate 'refs/heads/' | grep \"$(git config user.email)\" | cut -f 2 | cut -d '/' -f 3-"
 	yolo-revert = "!~/dotfiles/utils/revert.sh"
 	fork-point = "!git merge-base --fork-point origin/master $(git rev-parse --abbrev-ref HEAD)"
 	branch-log = "!git log $(git fork-point)...HEAD --oneline"
