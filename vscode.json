@@ -1,0 +1,98 @@
+{
+  "editor.formatOnSave": false,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.showcmd": true,
+  "vim.useSystemClipboard": true,
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "nvim",
+  "vim.leader": ",",
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":nohl",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.formatDocument",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.trimTrailingWhitespace",
+          "args": []
+        },
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        },
+      ]
+    },
+    {
+      "before": [
+        "\\",
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.commentLine",
+          "args": []
+        },
+      ]
+    }
+  ],
+  "editor.fontFamily": "IBM Plex Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "workbench.fontAliasing": "antialiased",
+  "rust.rls": {
+    "executable": "rustup",
+    "args": [
+      "run",
+      "nightly",
+      "rls"
+    ]
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "workbench.colorTheme": "Jellybeams",
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "window.zoomLevel": 0,
+  "gitlens.keymap": "alternate",
+  "workbench.activityBar.visible": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  }
+}
