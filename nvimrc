@@ -26,6 +26,7 @@ Plugin 'janko-m/vim-test'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'ruby-formatter/rufo-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'nelstrom/vim-textobj-rubyblock'
