@@ -23,6 +23,7 @@ Plugin 'wellle/targets.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'kshenoy/vim-signature'
 Plugin 'janko-m/vim-test'
+Plugin 'w0rp/ale'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
@@ -88,6 +89,12 @@ let g:ruby_indent_block_style = 'do'
 
 " highlightedyank
 let g:highlightedyank_highlight_duration = 200
+
+" ALE
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'ruby': ['rufo'],
+\}
 
 " Use the dot command in normal mode
 xnoremap . :norm.<CR>
