@@ -98,6 +98,8 @@ ensure_repo ~/.nvm git@github.com:creationix/nvm.git
 if [ -x "$(command -v code)" ]; then
   header "Installing VSCode extensions"
   <~/dotfiles/vscode-extensions.txt xargs -n 1 code --install-extension
+
+  code --list-extensions | sort > ~/dotfiles/vscode-extensions.txt
 else
   header "Skipping VSCode extensions"
 fi
