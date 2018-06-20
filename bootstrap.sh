@@ -2,12 +2,12 @@
 
 set -e
 
-log(){ 
-  echo -e "$(tput setaf 2)> $*$(tput sgr0)" 
+log(){
+  echo -e "$(tput setaf 2)> $*$(tput sgr0)"
 }
 
-warn(){ 
-  echo -e "$(tput setaf 1)> $*$(tput sgr0)" 
+warn(){
+  echo -e "$(tput setaf 1)> $*$(tput sgr0)"
 }
 
 header(){
@@ -41,12 +41,12 @@ ensure_directory(){
   fi
 }
 
-ensure_repo(){ 
+ensure_repo(){
   local repo_path=$1
   local repo_url=$2
-  
+
   ensure_directory $repo_path
-  
+
   (
     cd "$repo_path"
     if git rev-parse --is-inside-work-tree > /dev/null && [ "$repo_path" =  "$(git rev-parse --show-toplevel)" ]
@@ -80,7 +80,7 @@ header "Setting up packages"
 # Shell
 ensure_repo ~/.oh-my-zsh git@github.com:robbyrussell/oh-my-zsh.git
 ensure_repo ~/.oh-my-zsh/custom/plugins/pure git@github.com:sindresorhus/pure.git
-ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:zsh-users/zsh-syntax-highlighting.git 
+ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:zsh-users/zsh-syntax-highlighting.git
 
 # Vim
 ensure_repo ~/.vim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
@@ -94,3 +94,10 @@ ensure_repo ~/.rbenv/plugins/ruby-build git@github.com:sstephenson/ruby-build.gi
 
 # Node
 ensure_repo ~/.nvm git@github.com:creationix/nvm.git
+
+if [ -x "$(command -v code)" ]; then
+  header "Installing VSCode extensions"
+  <~/dotfiles/vscode-extensions.txt xargs -n 1 code --install-extension
+else
+  header "Skipping VSCode extensions"
+fi
