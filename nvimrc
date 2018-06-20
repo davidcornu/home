@@ -95,6 +95,10 @@ let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'ruby': ['rufo'],
 \}
+let g:ale_linters = {
+\   'ruby': [],
+\   'markdown': [],
+\}
 
 " Use the dot command in normal mode
 xnoremap . :norm.<CR>
