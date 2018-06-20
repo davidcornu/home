@@ -1,0 +1,21 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+e",
+    "command": "emmet.expandAbbreviation"
+  },
+  {
+    "key": "pagedown",
+    "command": "workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "pageup",
+    "command": "workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
+]

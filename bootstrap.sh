@@ -73,6 +73,7 @@ ensure_symlink ~/dotfiles/gitignore ~/.gitignore
 ensure_symlink ~/dotfiles/gemrc ~/.gemrc
 ensure_symlink ~/dotfiles/tmux.conf ~/.tmux.conf
 ensure_symlink ~/dotfiles/vscode.json ~/Library/Application\ Support/Code/User/settings.json
+ensure_symlink ~/dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 header "Setting up packages"
 
