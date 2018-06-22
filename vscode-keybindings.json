@@ -6,12 +6,12 @@
   },
   {
     "key": "pagedown",
-    "command": "workbench.action.terminal.scrollDownPage",
+    "command": "scrollPageDown",
     "when": "terminalFocus"
   },
   {
     "key": "pageup",
-    "command": "workbench.action.terminal.scrollUpPage",
+    "command": "scrollPageUp",
     "when": "terminalFocus"
   },
   {
