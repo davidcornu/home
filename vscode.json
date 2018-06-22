@@ -8,7 +8,7 @@
   "vim.enableNeovim": true,
   "vim.neovimPath": "nvim",
   "vim.leader": ",",
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
         "<leader>",
@@ -49,19 +49,19 @@
         {
           "command": "workbench.action.files.save",
           "args": []
-        },
+        }
       ]
     },
     {
       "before": [
-        "\\",
+        "\\"
       ],
       "after": [],
       "commands": [
         {
           "command": "editor.action.commentLine",
           "args": []
-        },
+        }
       ]
     }
   ],
@@ -77,7 +77,6 @@
       "rls"
     ]
   },
-  "vsicons.dontShowNewVersionMessage": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "gitlens.showWhatsNewAfterUpgrades": false,
@@ -93,13 +92,10 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "reason.diagnostics.tools": [
-    "merlin",
-    "bsb"
-  ],
   "gitlens.historyExplorer.enabled": true,
   "editor.minimap.enabled": false,
   "terminal.integrated.fontSize": 14,
   "workbench.startupEditor": "newUntitledFile",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false
 }
