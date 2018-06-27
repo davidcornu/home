@@ -99,7 +99,9 @@ if [ -x "$(command -v code)" ]; then
   header "Installing VSCode extensions"
   <~/dotfiles/vscode-extensions.txt xargs -n 1 code --install-extension
 
+  header "Saving installed extensions"
   code --list-extensions | sort > ~/dotfiles/vscode-extensions.txt
+  log "Done."
 else
   header "Skipping VSCode extensions"
 fi
