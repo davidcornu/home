@@ -95,6 +95,7 @@ ensure_repo ~/.rbenv/plugins/ruby-build git@github.com:sstephenson/ruby-build.gi
 # Node
 ensure_repo ~/.nvm git@github.com:creationix/nvm.git
 
+# VSCode
 if [ -x "$(command -v code)" ]; then
   header "Installing VSCode extensions"
   <~/dotfiles/vscode-extensions.txt xargs -n 1 code --install-extension
