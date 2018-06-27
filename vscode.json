@@ -1,5 +1,8 @@
 {
   "editor.formatOnSave": false,
+  "[ruby]": {
+    "editor.formatOnSave": false
+  },
   "vim.hlsearch": true,
   "vim.incsearch": true,
   "vim.ignorecase": true,
@@ -8,6 +11,33 @@
   "vim.enableNeovim": true,
   "vim.neovimPath": "nvim",
   "vim.leader": ",",
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "\\"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.commentLine",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.formatSelection",
+          "args": []
+        }
+      ]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -110,5 +140,6 @@
   "terminal.integrated.fontSize": 14,
   "workbench.startupEditor": "newUntitledFile",
   "files.insertFinalNewline": true,
-  "workbench.editor.enablePreviewFromQuickOpen": false
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.statusBar.feedback.visible": false
 }

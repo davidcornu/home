@@ -7,6 +7,7 @@ gamunu.vscode-yarn
 gerane.Theme-Jellybeams
 kalitaalexey.vscode-rust
 kumar-harsh.graphql-for-vscode
+mbessey.vscode-rufo
 rebornix.Ruby
 vscodevim.vim
 ziyasal.vscode-open-in-github
