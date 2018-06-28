@@ -1,0 +1,10 @@
+fzf
+git
+jq
+mtr
+neovim
+ripgrep
+tig
+watchexec
+zsh
+shellcheck

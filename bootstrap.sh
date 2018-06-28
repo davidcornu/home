@@ -37,7 +37,7 @@ ensure_directory(){
     log "$dir_path already exists"
   else
     log "$dir_path does not exist. Creating."
-    mkdir -p $dir_path
+    mkdir -p "$dir_path"
   fi
 }
 
@@ -45,7 +45,7 @@ ensure_repo(){
   local repo_path=$1
   local repo_url=$2
 
-  ensure_directory $repo_path
+  ensure_directory "$repo_path"
 
   (
     cd "$repo_path"
@@ -105,4 +105,22 @@ if [ -x "$(command -v code)" ]; then
   log "Done."
 else
   header "Skipping VSCode extensions"
+fi
+
+# Homebrew
+if [ -x "$(command -v brew)" ]; then
+  header "Checking for recommended Homebrew packages"
+
+  missing=$(comm -1 -3 <(brew list --full-name | sort) <(sort brew-packages.txt))
+
+  if [ -n "$missing" ]; then
+    log "The following packages are not installed"
+    echo "$missing"
+    log "Installing"
+    echo "$missing" | xargs -n 1 brew install
+  else
+    log "All recommended Homebrew packages installed"
+  fi
+else
+  header "Skipping Homebrew"
 fi
