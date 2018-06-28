@@ -60,6 +60,10 @@ ensure_repo(){
   )
 }
 
+if [ "$(uname -s)" = "Darwin" ]; then
+  is_mac=1
+fi
+
 header "Setting up config files"
 
 # Config files
@@ -72,8 +76,6 @@ ensure_symlink ~/dotfiles/gitconfig ~/.gitconfig
 ensure_symlink ~/dotfiles/gitignore ~/.gitignore
 ensure_symlink ~/dotfiles/gemrc ~/.gemrc
 ensure_symlink ~/dotfiles/tmux.conf ~/.tmux.conf
-ensure_symlink ~/dotfiles/vscode.json ~/Library/Application\ Support/Code/User/settings.json
-ensure_symlink ~/dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 header "Setting up packages"
 
@@ -97,6 +99,12 @@ ensure_repo ~/.nvm git@github.com:creationix/nvm.git
 
 # VSCode
 if [ -x "$(command -v code)" ]; then
+  if [ -n "$is_mac" ]; then
+    header "Symlinking VSCode config files"
+    ensure_symlink ~/dotfiles/vscode.json ~/Library/Application\ Support/Code/User/settings.json
+    ensure_symlink ~/dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+  fi
+
   header "Installing VSCode extensions"
   <~/dotfiles/vscode-extensions.txt xargs -n 1 code --install-extension
 
