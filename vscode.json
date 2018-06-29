@@ -148,11 +148,12 @@
         "name": "Italic overrides",
         "scope": [
           "comment",
-          "variable.parameter.function.ruby",
+          "variable.parameter",
           "constant.language.symbol.hashkey.parameter.function.ruby",
+          "variable.language.self.ruby",
+          "meta.tag.attributes.js.jsx",
+          "variable.language.this.js",
           "text.html.basic entity.other.attribute-name.html",
-          "variable.parameter.js",
-          "meta.tag.attributes.js.jsx"
         ],
         "settings": {
           "fontStyle": "italic"
