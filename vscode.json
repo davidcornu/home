@@ -151,7 +151,7 @@
           "variable.parameter",
           "constant.language.symbol.hashkey.parameter.function.ruby",
           "variable.language.self.ruby",
-          "meta.tag.attributes.js.jsx",
+          "entity.other.attribute-name.js.jsx",
           "variable.language.this.js",
           "text.html.basic entity.other.attribute-name.html",
         ],
