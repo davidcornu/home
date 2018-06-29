@@ -158,6 +158,16 @@
         "settings": {
           "fontStyle": "italic"
         }
+      },
+      {
+        "name": "Italic exceptions",
+        "scope": [
+          "entity.name.type.instance.jsdoc",
+          "storage.type.class.jsdoc"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
       }
     ]
   }
