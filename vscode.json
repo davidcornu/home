@@ -141,5 +141,23 @@
   "workbench.startupEditor": "newUntitledFile",
   "files.insertFinalNewline": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.statusBar.feedback.visible": false
+  "workbench.statusBar.feedback.visible": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Italic overrides",
+        "scope": [
+          "comment",
+          "variable.parameter.function.ruby",
+          "constant.language.symbol.hashkey.parameter.function.ruby",
+          "text.html.basic entity.other.attribute-name.html",
+          "variable.parameter.js",
+          "meta.tag.attributes.js.jsx"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  }
 }
