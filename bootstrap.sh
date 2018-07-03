@@ -87,8 +87,22 @@ ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:z
 # Vim
 ensure_repo ~/.vim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
 
+if [ -x "$(command -v vim)" ]; then
+  header "Installing Vim plugins"
+  vim -s ~/dotfiles/install_plugins.vim
+else
+  header "Skipping Vim extensions"
+fi
+
 # NeoVim
 ensure_repo ~/.config/nvim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
+
+if [ -x "$(command -v nvim)" ]; then
+  header "Installing NeoVim plugins"
+  nvim -s ~/dotfiles/install_plugins.vim
+else
+  header "Skipping NeoVim extensions"
+fi
 
 # Ruby
 ensure_repo ~/.rbenv git@github.com:sstephenson/rbenv.git
