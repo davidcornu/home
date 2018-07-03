@@ -42,7 +42,8 @@ Plugin 'smerrill/vcl-vim-plugin'
 
 " Colour schemes
 " Plugin 'trusktr/seti.vim'
-Plugin 'nanotech/jellybeans.vim'
+" Plugin 'nanotech/jellybeans.vim'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin on
@@ -52,7 +53,7 @@ filetype indent on
 set background=dark
 set termguicolors
 let g:lightline = { 'colorscheme': 'jellybeans' }
-colorscheme jellybeans
+colorscheme gruvbox
 
 " Render HTML attributes in italics
 highlight Comment gui=italic cterm=italic

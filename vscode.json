@@ -170,5 +170,6 @@
         }
       }
     ]
-  }
+  },
+  "workbench.colorTheme": "Gruvbox Dark (Hard)"
 }

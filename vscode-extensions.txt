@@ -9,5 +9,6 @@ kalitaalexey.vscode-rust
 kumar-harsh.graphql-for-vscode
 mbessey.vscode-rufo
 rebornix.Ruby
+tomphilbin.gruvbox-themes
 vscodevim.vim
 ziyasal.vscode-open-in-github
