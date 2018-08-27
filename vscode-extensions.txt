@@ -8,7 +8,10 @@ gerane.Theme-Jellybeams
 kalitaalexey.vscode-rust
 kumar-harsh.graphql-for-vscode
 mbessey.vscode-rufo
-rebornix.Ruby
+msjsdiag.debugger-for-chrome
+neilding.language-liquid
+rebornix.ruby
+rust-lang.rust
 tomphilbin.gruvbox-themes
 vscodevim.vim
 ziyasal.vscode-open-in-github
