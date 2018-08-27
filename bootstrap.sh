@@ -119,8 +119,18 @@ if [ -x "$(command -v code)" ]; then
     ensure_symlink ~/dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
   fi
 
-  header "Installing VSCode extensions"
-  <~/dotfiles/vscode-extensions.txt xargs -n 1 code --install-extension
+  header "Checking VSCode extensions"
+
+  missing=$(comm -1 -3 <(code --list-extensions | sort) <(sort ~/dotfiles/vscode-extensions.txt))
+
+  if [ -n "$missing" ]; then
+    log "The following packages are not installed"
+    echo $missing
+    log "Installing"
+    echo "$missing" | xargs -n 1 code --install-extension
+  else
+    log "All VSCode extensions are installeds"
+  fi
 
   header "Saving installed extensions"
   code --list-extensions | sort > ~/dotfiles/vscode-extensions.txt
@@ -133,7 +143,7 @@ fi
 if [ -x "$(command -v brew)" ]; then
   header "Checking for recommended Homebrew packages"
 
-  missing=$(comm -1 -3 <(brew list --full-name | sort) <(sort brew-packages.txt))
+  missing=$(comm -1 -3 <(brew list --full-name | sort) <(sort ~/dotfiles/brew-packages.txt))
 
   if [ -n "$missing" ]; then
     log "The following packages are not installed"
