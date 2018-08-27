@@ -3,6 +3,9 @@
   "[ruby]": {
     "editor.formatOnSave": false
   },
+  "[rust]": {
+    "editor.formatOnSave": true
+  },
   "vim.hlsearch": true,
   "vim.incsearch": true,
   "vim.ignorecase": true,
@@ -112,14 +115,6 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "workbench.fontAliasing": "antialiased",
-  "rust.rls": {
-    "executable": "rustup",
-    "args": [
-      "run",
-      "nightly",
-      "rls"
-    ]
-  },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "gitlens.showWhatsNewAfterUpgrades": false,
@@ -171,5 +166,8 @@
       }
     ]
   },
-  "workbench.colorTheme": "Gruvbox Dark (Hard)"
+  "workbench.colorTheme": "Gruvbox Dark (Hard)",
+  "gitlens.codeLens.scopes": [],
+  "extensions.ignoreRecommendations": false,
+  "breadcrumbs.enabled": true
 }
