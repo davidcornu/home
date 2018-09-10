@@ -5,7 +5,6 @@ eamodio.gitlens
 esbenp.prettier-vscode
 gamunu.vscode-yarn
 gerane.Theme-Jellybeams
-kalitaalexey.vscode-rust
 kumar-harsh.graphql-for-vscode
 mbessey.vscode-rufo
 msjsdiag.debugger-for-chrome
