@@ -4,7 +4,7 @@
     "editor.formatOnSave": false
   },
   "[rust]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "vim.hlsearch": true,
   "vim.incsearch": true,
@@ -16,9 +16,7 @@
   "vim.leader": ",",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "\\"
-      ],
+      "before": ["\\"],
       "after": [],
       "commands": [
         {
@@ -28,10 +26,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "j"
-      ],
+      "before": ["<leader>", "j"],
       "after": [],
       "commands": [
         {
@@ -43,10 +38,7 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "c"
-      ],
+      "before": ["<leader>", "c"],
       "after": [],
       "commands": [
         {
@@ -56,10 +48,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "j"
-      ],
+      "before": ["<leader>", "j"],
       "after": [],
       "commands": [
         {
@@ -69,10 +58,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "w"
-      ],
+      "before": ["<leader>", "w"],
       "after": [],
       "commands": [
         {
@@ -86,10 +72,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "f"
-      ],
+      "before": ["<leader>", "f"],
       "after": [],
       "commands": [
         {
@@ -99,9 +82,7 @@
       ]
     },
     {
-      "before": [
-        "\\"
-      ],
+      "before": ["\\"],
       "after": [],
       "commands": [
         {
@@ -130,7 +111,6 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
   "editor.minimap.enabled": false,
   "terminal.integrated.fontSize": 14,
   "workbench.startupEditor": "newUntitledFile",
@@ -148,7 +128,7 @@
           "variable.language.self.ruby",
           "entity.other.attribute-name.js.jsx",
           "variable.language.this.js",
-          "text.html.basic entity.other.attribute-name.html",
+          "text.html.basic entity.other.attribute-name.html"
         ],
         "settings": {
           "fontStyle": "italic"
@@ -169,5 +149,14 @@
   "workbench.colorTheme": "Gruvbox Dark (Hard)",
   "gitlens.codeLens.scopes": [],
   "extensions.ignoreRecommendations": false,
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "rust-client.updateOnStartup": true,
+  "rust.clippy_preference": "on",
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ]
 }
