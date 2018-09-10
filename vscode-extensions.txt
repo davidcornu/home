@@ -1,5 +1,7 @@
 Dart-Code.dart-code
+GitHub.vscode-pull-request-github
 akamud.vscode-theme-onelight
+bungcip.better-toml
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
