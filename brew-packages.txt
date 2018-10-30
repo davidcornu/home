@@ -8,3 +8,4 @@ tig
 watchexec
 zsh
 shellcheck
+bat
