@@ -11,3 +11,4 @@ scratch.*
 .dev
 npm-debug.log
 yarn-error.log
+.vscode
