@@ -1,19 +1,76 @@
 {
-  "editor.formatOnSave": false,
   "[ruby]": {
     "editor.formatOnSave": false
   },
   "[rust]": {
     "editor.formatOnSave": false
   },
-  "vim.hlsearch": true,
-  "vim.incsearch": true,
-  "vim.ignorecase": true,
-  "vim.showcmd": true,
-  "vim.useSystemClipboard": true,
+  "breadcrumbs.enabled": true,
+  "editor.fontLigatures": true,
+  "editor.codeLens": false,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "IBM Plex Mono",
+  "editor.fontSize": 14,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Italic overrides",
+        "scope": [
+          "comment",
+          "variable.parameter",
+          "constant.language.symbol.hashkey.parameter.function.ruby",
+          "variable.language.self.ruby",
+          "entity.other.attribute-name.js.jsx",
+          "variable.language.this.js",
+          "text.html.basic entity.other.attribute-name.html"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Italic exceptions",
+        "scope": [
+          "entity.name.type.instance.jsdoc",
+          "storage.type.class.jsdoc"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": false,
+  "editor.insertSpaces": true,
+  "extensions.ignoreRecommendations": false,
+  "files.insertFinalNewline": true,
+  "githubPullRequests.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+  "gitlens.keymap": "alternate",
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "rust.jobs": 4,
+  "rust.goto_def_racer_fallback": true,
+  "rust.clippy_preference": "on",
+  "rust-client.channel": "nightly",
+  "terminal.integrated.fontSize": 14,
   "vim.enableNeovim": true,
-  "vim.neovimPath": "nvim",
-  "vim.leader": ",",
+  "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["\\"],
@@ -36,6 +93,15 @@
       ]
     }
   ],
+  "vim.disableExtension": false,
+  "vim.leader": ",",
+  "vim.hlsearch": true,
+  "vim.neovimPath": "nvim",
+  "vim.showcmd": true,
+  "vim.ignorecase": true,
+  "vim.visualstar": true,
+  "vim.incsearch": true,
+  "vim.sneak": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "c"],
@@ -92,77 +158,11 @@
       ]
     }
   ],
-  "editor.fontFamily": "IBM Plex Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "workbench.fontAliasing": "antialiased",
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "gitlens.showWhatsNewAfterUpgrades": false,
   "window.zoomLevel": 0,
-  "gitlens.keymap": "alternate",
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
-  },
-  "editor.minimap.enabled": false,
-  "terminal.integrated.fontSize": 14,
-  "workbench.startupEditor": "newUntitledFile",
-  "files.insertFinalNewline": true,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.statusBar.feedback.visible": false,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "name": "Italic overrides",
-        "scope": [
-          "comment",
-          "variable.parameter",
-          "constant.language.symbol.hashkey.parameter.function.ruby",
-          "variable.language.self.ruby",
-          "entity.other.attribute-name.js.jsx",
-          "variable.language.this.js",
-          "text.html.basic entity.other.attribute-name.html"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "name": "Italic exceptions",
-        "scope": [
-          "entity.name.type.instance.jsdoc",
-          "storage.type.class.jsdoc"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  },
   "workbench.colorTheme": "Gruvbox Dark (Hard)",
-  "extensions.ignoreRecommendations": false,
-  "breadcrumbs.enabled": true,
-  "rust-client.channel": "nightly",
-  "rust.clippy_preference": "on",
-  "rust.jobs": 4,
-  "rust.goto_def_racer_fallback": true,
-  "vim.visualstar": true,
+  "workbench.fontAliasing": "antialiased",
   "workbench.sideBar.location": "left",
-  "editor.codeLens": false,
-  "vim.sneak": true,
-  "vim.disableExtension": false,
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ]
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "newUntitledFile"
 }
