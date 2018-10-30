@@ -20,6 +20,7 @@
 [diff]
 	tool = icdiff
 	compactionHeuristic = true
+	algorithm = histogram
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
