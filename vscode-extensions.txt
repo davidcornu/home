@@ -1,6 +1,7 @@
 Dart-Code.dart-code
 GitHub.vscode-pull-request-github
 akamud.vscode-theme-onelight
+alefragnani.Bookmarks
 bungcip.better-toml
 dbaeumer.vscode-eslint
 eamodio.gitlens
@@ -9,6 +10,8 @@ gamunu.vscode-yarn
 gerane.Theme-Jellybeams
 kumar-harsh.graphql-for-vscode
 mbessey.vscode-rufo
+ms-python.python
+ms-vscode.Go
 msjsdiag.debugger-for-chrome
 neilding.language-liquid
 rebornix.ruby
