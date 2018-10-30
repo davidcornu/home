@@ -147,12 +147,18 @@
     ]
   },
   "workbench.colorTheme": "Gruvbox Dark (Hard)",
-  "gitlens.codeLens.scopes": [],
   "extensions.ignoreRecommendations": false,
   "breadcrumbs.enabled": true,
-  "rust-client.updateOnStartup": true,
+  "rust-client.channel": "nightly",
   "rust.clippy_preference": "on",
-  "github.hosts": [
+  "rust.jobs": 4,
+  "rust.goto_def_racer_fallback": true,
+  "vim.visualstar": true,
+  "workbench.sideBar.location": "left",
+  "editor.codeLens": false,
+  "vim.sneak": true,
+  "vim.disableExtension": false,
+  "githubPullRequests.hosts": [
     {
       "host": "https://github.com",
       "username": "oauth",
