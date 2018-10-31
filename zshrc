@@ -62,8 +62,8 @@ function strip-diff {
   (
     set -e
     cd "$(git rev-parse --show-toplevel)"
-    git diff-files --name-only -0 | while read line; do
-      target="/tmp/$(git hash-object -- $line)-stripped"
+    git diff-files --name-only -0 | while read -r line; do
+      target="/tmp/$(git hash-object -- "$line")-stripped"
       git stripspace < "$line" > "$target"
       cat "$target" > "$line"
       rm "$target"
@@ -73,7 +73,7 @@ function strip-diff {
 
 # Simpler Bundler
 function b {
-  { bundle check > /dev/null || bundle install; } && bundle exec $*
+  { bundle check > /dev/null || bundle install; } && bundle exec "$@"
 }
 
 # Misc
@@ -89,11 +89,11 @@ alias vim='nvim'
 alias clear-yarn="ruby -r json -r fileutils -e \"JSON.parse(File.read('config/npm_packages.json')).each { |dir| FileUtils.rm_rf(dir + '/node_modules') }\" && yarn cache clean"
 
 function inspect-cert {
-  openssl x509 -noout -text -in $1
+  openssl x509 -noout -text -in "$1"
 }
 
 function inspect-csr {
-  openssl req -noout -text -in $1
+  openssl req -noout -text -in "$1"
 }
 
 # Get rid of autocorrection
