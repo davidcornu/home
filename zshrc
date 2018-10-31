@@ -49,6 +49,13 @@ PATH="$HOME/.cargo/bin:$PATH"
 # Add Yarn binaries to PATH
 PATH="$HOME/.yarn/bin:$PATH"
 
+# Add Go
+if [ -d "$HOME/Development/Go" ]
+then
+  export GOPATH="$HOME/Development/Go"
+  PATH="$GOPATH/bin:$PATH"
+fi
+
 # Git commands
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 function strip-diff {
