@@ -164,5 +164,6 @@
   "workbench.sideBar.location": "left",
   "workbench.statusBar.feedback.visible": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "window.titleBarStyle": "native"
 }
