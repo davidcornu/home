@@ -7,11 +7,10 @@ call vundle#begin('~/.config/nvim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf'
-Plugin 'jlanzarotta/bufexplorer'
+Plugin 'junegunn/fzf.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-commentary'
 Plugin 'kana/vim-textobj-user'
-Plugin 'mileszs/ack.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
@@ -22,15 +21,14 @@ Plugin 'tpope/vim-surround'
 Plugin 'wellle/targets.vim'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'kshenoy/vim-signature'
-Plugin 'janko-m/vim-test'
-Plugin 'w0rp/ale'
+Plugin 'justinmk/vim-sneak'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'ruby-formatter/rufo-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'elzr/vim-json'
 Plugin 'rstacruz/sparkup'
 Plugin 'rust-lang/rust.vim'
@@ -69,9 +67,6 @@ let g:deoplete#enable_at_startup = 1
 
 " neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
-
-" Use rg instead of ack
-let g:ackprg = 'rg --vimgrep'
 
 " FZF
 nnoremap <C-p> :FZF<CR>
@@ -144,7 +139,7 @@ nnoremap <Leader>r :call ToggleRelativeNumbers()<CR>
 nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>
 nnoremap <Leader>j :call FormatJavaScript()<CR>
 nnoremap <Leader>i :call GoImports()<CR>
-nnoremap <Leader>b :BufExplorer<CR>
+nnoremap <Leader>b :Buffers<CR>
 
 " Don't trigger jump list with tab
 nnoremap <Tab> <Nop>
