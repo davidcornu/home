@@ -86,15 +86,8 @@ let g:ruby_indent_block_style = 'do'
 " highlightedyank
 let g:highlightedyank_highlight_duration = 200
 
-" ALE
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'ruby': ['rufo'],
-\}
-let g:ale_linters = {
-\   'ruby': [],
-\   'markdown': [],
-\}
+" sneak
+let g:sneak#label = 1
 
 " Use the dot command in normal mode
 xnoremap . :norm.<CR>
