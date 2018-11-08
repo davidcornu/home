@@ -5,23 +5,35 @@ call vundle#begin('~/.config/nvim/bundle')
 
 " Packages
 Plugin 'VundleVim/Vundle.vim'
+
+" Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+
+" Editing commands
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-commentary'
-Plugin 'kana/vim-textobj-user'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'itchyny/lightline.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rhubarb'
-Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'Shougo/deoplete.nvim'
 Plugin 'tpope/vim-surround'
+
+" Movement
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'wellle/targets.vim'
 Plugin 'machakann/vim-highlightedyank'
-Plugin 'kshenoy/vim-signature'
 Plugin 'justinmk/vim-sneak'
+
+" UI
+Plugin 'airblade/vim-gitgutter'
+Plugin 'itchyny/lightline.vim'
+Plugin 'kshenoy/vim-signature'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
+
+" Autocompletion
+Plugin 'Shougo/deoplete.nvim'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
