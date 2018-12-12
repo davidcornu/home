@@ -45,13 +45,6 @@
   "editor.insertSpaces": true,
   "extensions.ignoreRecommendations": false,
   "files.insertFinalNewline": true,
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ],
   "gitlens.keymap": "alternate",
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.advanced.messages": {
@@ -164,6 +157,10 @@
   "workbench.sideBar.location": "left",
   "workbench.statusBar.feedback.visible": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "window.titleBarStyle": "native"
+  "window.titleBarStyle": "native",
+  "search.showLineNumbers": true,
+  "workbench.editor.swipeToNavigate": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate"
 }
