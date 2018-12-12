@@ -41,3 +41,5 @@
 	yolo-revert = "!~/dotfiles/utils/revert.sh"
 	fork-point = "!git merge-base --fork-point origin/master $(git rev-parse --abbrev-ref HEAD)"
 	branch-log = "!git log $(git fork-point)...HEAD --oneline"
+[protocol]
+	version = 2
