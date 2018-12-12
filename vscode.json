@@ -67,7 +67,7 @@
   "rust.jobs": 4,
   "rust.goto_def_racer_fallback": true,
   "rust.clippy_preference": "on",
-  "rust-client.channel": "nightly",
+  "rust-client.channel": "stable",
   "terminal.integrated.fontSize": 14,
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
