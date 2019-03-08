@@ -1,13 +1,15 @@
 Dart-Code.dart-code
+EditorConfig.EditorConfig
 GitHub.vscode-pull-request-github
-akamud.vscode-theme-onelight
 alefragnani.Bookmarks
+azemoh.one-monokai
+bierner.markdown-preview-github-styles
 bungcip.better-toml
 dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
 gamunu.vscode-yarn
-gerane.Theme-Jellybeams
+karunamurti.tera
 kumar-harsh.graphql-for-vscode
 mbessey.vscode-rufo
 ms-python.python
@@ -16,6 +18,6 @@ msjsdiag.debugger-for-chrome
 neilding.language-liquid
 rebornix.ruby
 rust-lang.rust
-tomphilbin.gruvbox-themes
 vscodevim.vim
+vstirbu.vscode-mermaid-preview
 ziyasal.vscode-open-in-github

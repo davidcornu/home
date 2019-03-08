@@ -58,7 +58,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "rust.jobs": 4,
-  "rust.goto_def_racer_fallback": true,
   "rust.clippy_preference": "on",
   "rust-client.channel": "stable",
   "terminal.integrated.fontSize": 14,
@@ -89,7 +88,7 @@
   "vim.disableExtension": false,
   "vim.leader": ",",
   "vim.hlsearch": true,
-  "vim.neovimPath": "nvim",
+  "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.showcmd": true,
   "vim.ignorecase": true,
   "vim.visualstar": true,
@@ -152,15 +151,16 @@
     }
   ],
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Gruvbox Dark (Hard)",
+  "workbench.colorTheme": "One Monokai",
   "workbench.fontAliasing": "antialiased",
   "workbench.sideBar.location": "left",
   "workbench.statusBar.feedback.visible": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "window.titleBarStyle": "native",
   "search.showLineNumbers": true,
   "workbench.editor.swipeToNavigate": true,
   "workbench.editor.highlightModifiedTabs": true,
   "ruby.codeCompletion": "rcodetools",
-  "ruby.intellisense": "rubyLocate"
+  "ruby.intellisense": "rubyLocate",
+  "workbench.startupEditor": "newUntitledFile",
+  "window.titleBarStyle": "native"
 }
