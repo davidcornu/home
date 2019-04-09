@@ -43,3 +43,5 @@
 	branch-log = "!git log $(git fork-point)...HEAD --oneline"
 [protocol]
 	version = 2
+[credential]
+	helper = osxkeychain
