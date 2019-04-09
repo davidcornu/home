@@ -1,10 +1,4 @@
 {
-  "[ruby]": {
-    "editor.formatOnSave": false
-  },
-  "[rust]": {
-    "editor.formatOnSave": false
-  },
   "breadcrumbs.enabled": true,
   "editor.fontLigatures": true,
   "editor.codeLens": false,
@@ -59,7 +53,7 @@
   },
   "rust.jobs": 4,
   "rust.clippy_preference": "on",
-  "rust-client.channel": "stable",
+  "rust-client.channel": "nightly",
   "terminal.integrated.fontSize": 14,
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
