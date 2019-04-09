@@ -33,7 +33,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 
 " Autocompletion
-Plugin 'Shougo/deoplete.nvim'
+" Plugin 'Shougo/deoplete.nvim'
+Plugin 'neoclide/coc.nvim'
 
 " Additional language support
 Plugin 'vim-ruby/vim-ruby'
@@ -53,7 +54,8 @@ Plugin 'smerrill/vcl-vim-plugin'
 " Colour schemes
 " Plugin 'trusktr/seti.vim'
 " Plugin 'nanotech/jellybeans.vim'
-Plugin 'morhetz/gruvbox'
+" Plugin 'morhetz/gruvbox'
+Plugin 'rakr/vim-one'
 
 call vundle#end()
 filetype plugin on
@@ -62,8 +64,33 @@ filetype indent on
 " Colours
 set background=dark
 set termguicolors
-let g:lightline = { 'colorscheme': 'jellybeans' }
-colorscheme gruvbox
+colorscheme one
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ 'active': {
+      \   'left': [
+      \     ['mode', 'paste'],
+      \     ['cocstatus', 'readonly', 'filename', 'modified'],
+      \   ],
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \ },
+      \ }
+
+" COC
+let g:coc_global_extensions = [
+      \ 'coc-json',
+      \ 'coc-tsserver',
+      \ 'coc-html',
+      \ 'coc-css',
+      \ 'coc-rls',
+      \ 'coc-yaml',
+      \ ]
+
+command! -nargs=0 Format :call CocAction('format')
 
 " Render HTML attributes in italics
 highlight Comment gui=italic cterm=italic
@@ -75,10 +102,10 @@ set noerrorbells
 set visualbell t_vb=
 
 " deoplete
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 
 " neomake
-let g:neomake_javascript_enabled_makers = ['eslint']
+" let g:neomake_javascript_enabled_makers = ['eslint']
 
 " FZF
 nnoremap <C-p> :FZF<CR>
