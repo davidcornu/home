@@ -45,3 +45,5 @@
 	version = 2
 [credential]
 	helper = osxkeychain
+[pack]
+	useSparse = true
