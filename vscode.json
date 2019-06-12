@@ -53,7 +53,7 @@
   },
   "rust.jobs": 4,
   "rust.clippy_preference": "on",
-  "rust-client.channel": "nightly",
+  "rust-client.channel": "stable",
   "terminal.integrated.fontSize": 14,
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
@@ -156,5 +156,12 @@
   "ruby.codeCompletion": "rcodetools",
   "ruby.intellisense": "rubyLocate",
   "workbench.startupEditor": "newUntitledFile",
-  "window.titleBarStyle": "native"
+  "window.titleBarStyle": "native",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.rendererType": "dom",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
