@@ -67,7 +67,7 @@ fi
 header "Setting up config files"
 
 # Config files
-ensure_symlink ~/dotfiles/vimrc ~/.vimrc
+# ensure_symlink ~/dotfiles/vimrc ~/.vimrc
 ensure_directory ~/.config/nvim
 ensure_symlink ~/dotfiles/nvimrc ~/.config/nvim/init.vim
 ensure_symlink ~/dotfiles/ideavimrc ~/.ideavimrc
@@ -85,14 +85,14 @@ ensure_repo ~/.oh-my-zsh/custom/plugins/pure git@github.com:sindresorhus/pure.gi
 ensure_repo ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting git@github.com:zsh-users/zsh-syntax-highlighting.git
 
 # Vim
-ensure_repo ~/.vim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
+# ensure_repo ~/.vim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
 
-if [ -x "$(command -v vim)" ]; then
-  header "Installing Vim plugins"
-  vim -s ~/dotfiles/install_plugins.vim
-else
-  header "Skipping Vim extensions"
-fi
+# if [ -x "$(command -v vim)" ]; then
+#   header "Installing Vim plugins"
+#   vim -s ~/dotfiles/install_plugins.vim
+# else
+#   header "Skipping Vim extensions"
+# fi
 
 # NeoVim
 ensure_repo ~/.config/nvim/bundle/Vundle.vim git@github.com:VundleVim/Vundle.vim.git
