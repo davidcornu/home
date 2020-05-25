@@ -127,3 +127,6 @@ export EDITOR=nvim
 
 # Use FZF if it's around
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Don't send analytics to random NPM packages
+export SCARF_ANALYTICS=false
