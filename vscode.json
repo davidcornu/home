@@ -3,7 +3,7 @@
   "editor.fontLigatures": true,
   "editor.codeLens": false,
   "editor.tabSize": 2,
-  "editor.fontFamily": "IBM Plex Mono",
+  "editor.fontFamily": "Cousine",
   "editor.fontSize": 14,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -145,7 +145,7 @@
     }
   ],
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "One Monokai",
+  "workbench.colorTheme": "Noctis Azureus",
   "workbench.fontAliasing": "antialiased",
   "workbench.sideBar.location": "left",
   "workbench.statusBar.feedback.visible": false,
