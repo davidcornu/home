@@ -52,7 +52,7 @@ ensure_repo(){
     if git rev-parse --is-inside-work-tree > /dev/null && [ "$repo_path" =  "$(git rev-parse --show-toplevel)" ]
     then
       log "$repo_path is a already a git repository. Updating."
-      git pull origin master
+      git pull origin $(git rev-parse --abbrev-ref HEAD)
     else
       log "$repo_path isn't a git repository. Creating."
       git clone "$repo_url" "$repo_path"
@@ -119,25 +119,25 @@ if [ -x "$(command -v code)" ]; then
     ensure_symlink ~/dotfiles/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
   fi
 
-  header "Checking VSCode extensions"
-
-  missing=$(comm -1 -3 <(code --list-extensions | sort) <(sort ~/dotfiles/vscode-extensions.txt))
-
-  if [ -n "$missing" ]; then
-    log "The following packages are not installed"
-    echo $missing
-    log "Installing"
-    echo "$missing" | xargs -n 1 code --install-extension
-  else
-    log "All VSCode extensions are installeds"
-  fi
-
-  header "Saving installed extensions"
-  code --list-extensions | sort > ~/dotfiles/vscode-extensions.txt
-  log "Done."
-else
-  header "Skipping VSCode extensions"
-fi
+#   header "Checking VSCode extensions"
+# 
+#   missing=$(comm -1 -3 <(code --list-extensions | sort) <(sort ~/dotfiles/vscode-extensions.txt))
+# 
+#   if [ -n "$missing" ]; then
+#     log "The following packages are not installed"
+#     echo $missing
+#     log "Installing"
+#     echo "$missing" | xargs -n 1 code --install-extension
+#   else
+#     log "All VSCode extensions are installeds"
+#   fi
+# 
+#   header "Saving installed extensions"
+#   code --list-extensions | sort > ~/dotfiles/vscode-extensions.txt
+#   log "Done."
+# else
+#   header "Skipping VSCode extensions"
+# fi
 
 # Homebrew
 if [ -x "$(command -v brew)" ]; then
