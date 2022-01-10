@@ -35,9 +35,8 @@
     ]
   },
   "editor.minimap.enabled": false,
-  "editor.formatOnSave": false,
   "editor.insertSpaces": true,
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "files.insertFinalNewline": true,
   "gitlens.keymap": "alternate",
   "gitlens.showWhatsNewAfterUpgrades": false,
@@ -163,5 +162,15 @@
   "terminal.integrated.rendererType": "dom",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultLocation": "editor",
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 1.6,
+  "rust-analyzer.checkOnSave.command": "clippy"
 }
