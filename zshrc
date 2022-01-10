@@ -123,7 +123,7 @@ else
 fi
 
 # Set editor
-export EDITOR=nvim
+export EDITOR="nvim --noplugin"
 
 # Use FZF if it's around
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
