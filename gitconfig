@@ -47,3 +47,5 @@
 	helper = osxkeychain
 [pack]
 	useSparse = true
+[init]
+	defaultBranch = main
