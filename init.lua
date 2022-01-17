@@ -61,7 +61,7 @@ vim.cmd[[nnoremap <Leader>w :call StripWhitespace()<CR>:w<CR>]]
 vim.cmd[[noremap \ :Commentary<CR>]]
 vim.cmd[[nnoremap <Leader>c :nohl<CR>]]
 vim.cmd[[nnoremap <C-p> :FZF<CR>]]
-vim.cmd[[nnoremap <Leader>d :NvimTreeToggle<CR>]]
+vim.cmd[[nnoremap <C-d> :NvimTreeToggle<CR>]]
 -- Avoid accidental ex mode
 vim.cmd[[map Q <Nop>]]
 -- Use the dot command in normal mode
