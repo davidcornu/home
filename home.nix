@@ -5,25 +5,25 @@
 
   programs.home-manager.enable = true;
 
-  home.packages = [
-    pkgs.atuin
-    pkgs.bat
-    pkgs.datasette
-    pkgs.difftastic
-    pkgs.exa
-    pkgs.jq
-    pkgs.mtr
-    pkgs.neovim
-    pkgs.ripgrep
-    pkgs.rnix-lsp
-    pkgs.shellcheck
-    pkgs.sqlite-interactive
-    pkgs.watchexec
-    pkgs.youtube-dl
-    pkgs.vscodium
-    pkgs.fish
-    pkgs.tmux
-    pkgs.git
+  home.packages = with pkgs; [
+    atuin
+    bat
+    datasette
+    difftastic
+    exa
+    fish
+    git
+    jq
+    mtr
+    neovim
+    ripgrep
+    rnix-lsp
+    shellcheck
+    sqlite-interactive
+    tmux
+    vscodium
+    watchexec
+    youtube-dl
   ];
 
   programs.direnv = {
