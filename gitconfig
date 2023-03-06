@@ -11,22 +11,12 @@
 [pull]
 	default = current
 	rebase = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool "icdiff"]
 	cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
-[difftool]
-	prompt = false
 [diff]
-	tool = icdiff
 	compactionHeuristic = true
 	algorithm = histogram
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
-[merge]
+	external = difft
 	tool = Kaleidoscope
 [alias]
 	pom = pull origin master
@@ -49,3 +39,15 @@
 	useSparse = true
 [init]
 	defaultBranch = main
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+	trustExitCode = true
+[merge]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
