@@ -1,32 +1,23 @@
-# Dotfiles
+# $HOME configuration
+
+My [Home Manager](https://nix-community.github.io/home-manager/) configuration, very much inspired by [Tidying up your $HOME with Nix](https://juliu.is/tidying-your-home-with-nix/).
 
 ## Installation
 
-```shell
-$ cd ~/
-$ git clone git@github.com:davidcornu/dotfiles.git
-$ ./dotfiles/bootstrap.sh
-```
+- [Install Nix](https://nixos.org/download.html)
+- [Enable flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes)
+- Clone this repository into `~/.config/nixpkgs`
+- Run `nix run . switch` in that directory
 
-The boostrap script will symlink config files from `~/dotfiles` into `~/` and install the following packages:
+## Making changes
 
-- https://github.com/robbyrussell/oh-my-zsh
-- https://github.com/sindresorhus/pure
-- https://github.com/zsh-users/zsh-syntax-highlighting
-- https://github.com/gmarik/vundle
-- https://github.com/sstephenson/rbenv
-- https://github.com/sstephenson/ruby-build
-- https://github.com/creationix/nvm
+- Edit `home.nix` and run `home-manager switch`
 
-## Updating
+**Useful references**
 
-```shell
-$ cd ~/dotfiles
-$ git pull
-$ ./bootstrap.sh
-```
+- [Home Manager configuration options](https://nix-community.github.io/home-manager/options.html)
+- [Source for Home Manager packages](https://github.com/nix-community/home-manager/tree/master/modules/programs)
 
-## Other useful tools
+## Future work
 
-- https://github.com/BurntSushi/ripgrep
-- https://github.com/jonas/tig
+- There are several cases where I could be using `programs.*` with the built-in options rather than using `home.packages` along with `home.file.*`, which would likely yield a better-integrated setup.
