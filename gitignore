@@ -4,6 +4,7 @@ nohup.out
 *.sublime-workspace
 node_modules
 .env
+.envrc
 virtualenv
 gin-bin
 scratch.*
@@ -13,3 +14,4 @@ scratch
 npm-debug.log
 yarn-error.log
 .vscode
+.direnv
