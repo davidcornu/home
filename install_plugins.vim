@@ -1,4 +1,0 @@
-:PluginInstall
-:PluginClean
-:quitall
-
