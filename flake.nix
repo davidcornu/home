@@ -19,7 +19,7 @@
     {
       defaultPackage = home-manager.defaultPackage.${system};
 
-      packages.homeConfigurations.david = home-manager.lib.homeManagerConfiguration {
+      packages.homeConfigurations."david@medina" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [ ./home.nix ];
       };
