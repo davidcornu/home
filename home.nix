@@ -47,5 +47,6 @@
     ".config/fish/nightfox.fish".source = ./dotfiles/nightfox.fish;
     "Library/Application Support/VSCodium/User/settings.json".source = ./vscodium/settings.json;
     "Library/Application Support/VSCodium/User/keybindings.json".source = ./vscodium/keybindings.json;
+    ".cargo/config.toml".source = ./dotfiles/cargo.toml;
   };
 }
