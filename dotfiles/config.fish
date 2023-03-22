@@ -17,6 +17,7 @@ if test -d "/Applications/Postgres.app"
 end
 
 # Add Nix profile to PATH
+fish_add_path "/nix/var/nix/profiles/default/bin"
 fish_add_path "$HOME/.nix-profile/bin" 
 
 # Turn off greeting message

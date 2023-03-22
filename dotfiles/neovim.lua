@@ -83,14 +83,18 @@ require "paq" {
   "kyazdani42/nvim-tree.lua";
 }
 
-vim.g.nvim_tree_show_icons = {
-  git = 0,
-  folders = 0,
-  files = 0,
-  folder_arrows = 0,
-}
-
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  renderer = {
+    icons = {
+      show = {
+        git = false,
+        folder = false,
+        file = false,
+        folder_arrow = false,
+      }
+    }
+  }
+})
 
 require("lualine").setup {
   options = {
