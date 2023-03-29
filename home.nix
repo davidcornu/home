@@ -20,6 +20,7 @@
     rnix-lsp
     shellcheck
     sqlite-interactive
+    swiftbar
     tmux
     vscodium
     watchexec

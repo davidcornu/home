@@ -81,6 +81,7 @@ require "paq" {
   "hrsh7th/cmp-path";
   "hrsh7th/nvim-cmp";
   "kyazdani42/nvim-tree.lua";
+  "airblade/vim-gitgutter";
 }
 
 require("nvim-tree").setup({
