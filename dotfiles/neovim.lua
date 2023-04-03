@@ -82,6 +82,7 @@ require "paq" {
   "hrsh7th/nvim-cmp";
   "kyazdani42/nvim-tree.lua";
   "airblade/vim-gitgutter";
+  "sbdchd/neoformat";
 }
 
 require("nvim-tree").setup({
