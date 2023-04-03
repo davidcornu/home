@@ -16,6 +16,7 @@
     jq
     mtr
     neovim
+    nodePackages.prettier
     ripgrep
     rnix-lsp
     shellcheck
