@@ -13,9 +13,11 @@
     exa
     fish
     git
+    helix
     jq
     mtr
     neovim
+    nixpkgs-fmt
     nodePackages.prettier
     ripgrep
     rnix-lsp
