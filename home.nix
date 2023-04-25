@@ -21,6 +21,7 @@
     nodePackages.prettier
     ripgrep
     rnix-lsp
+    sfz
     shellcheck
     sqlite-interactive
     tmux
