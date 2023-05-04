@@ -15,6 +15,7 @@
     git
     helix
     jq
+    mosh
     mtr
     neovim
     nixpkgs-fmt
