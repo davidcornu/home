@@ -36,7 +36,7 @@ if type -q nvim
   alias vim="nvim"
   set EDITOR "nvim"
 else
-  set EDITOR="vim"
+  set EDITOR "vim"
 end
 
 if type -q direnv
