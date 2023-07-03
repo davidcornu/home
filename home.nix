@@ -11,7 +11,6 @@
     datasette
     difftastic
     exa
-    fish
     git
     helix
     jq
@@ -29,6 +28,9 @@
     vscodium
     watchexec
     youtube-dl
+    hurl
+    ruby_3_2
+    nodejs_20
   ];
 
   programs.direnv = {
