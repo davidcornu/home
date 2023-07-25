@@ -37,5 +37,13 @@
   "editor.fontLigatures": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.lineHeight": 1.5,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "redhat.telemetry.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
