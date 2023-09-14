@@ -33,6 +33,7 @@
     nodejs_20
     flyctl
     lima
+    graphicsmagick
   ];
 
   programs.direnv = {

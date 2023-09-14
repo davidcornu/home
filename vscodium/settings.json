@@ -28,7 +28,7 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.allowChords": false,
   "terminal.integrated.sendKeybindingsToShell": true,
-  "workbench.colorTheme": "Ayu Light Bordered",
+  "workbench.colorTheme": "Material Theme Lighter High Contrast",
   "nix.enableLanguageServer": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -44,6 +44,9 @@
   "svelte.enable-ts-plugin": true,
   "redhat.telemetry.enabled": false,
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

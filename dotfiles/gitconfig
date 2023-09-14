@@ -1,6 +1,13 @@
 [user]
 	name = David Cornu
 	email = me@davidcornu.com
+  signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGUhQfIG198qs7FwWRpTMokTZAjCf6AmqwmgT1eCtGbTQtgO797XiMJhQyOmb3uW+59n1SLyeyK70YIp3jCe1zh6VDz3NXIY7Kz+pT+EQ+CUSee04amllpWo/wpvSgN+0Z9bqaGq+xTXUXVtupRpgZ3tgTCKknWx+4sgcownvDjqxGzGrXbOl7Js0djbqghpsadvhpLd+c8GkHK6poOqyn9glKgQHGcbzjkylcQmelqr1Df+4YB7HktaeGH6hABMYSuk/wOn1LPtQ0PoV2A3fqtxhD6LO7dKkLifZrpqyneIEjP3fy3t3Kcq3glBaB+yD/vtvQ2aztZ8Kv49MovOGDx8gF2A74K/HpalcFSphNOVXsik3Exbf4bVI+Pnnxiq5vnVj5zlSL7pqtotwG6Y0fUviAKOdgP8SjbCU/3PaVBTs9MEXEYuXBOEOPQlDih8TCtoVdBju3ErrcGCO2CVbQ71OBACK3d2OIaDIzXq8GRluqLfFCKH33stMZPCFLpydgzGvJ1roHiTFg9al5izG7kRmAWnzNOdxUhn088hMed1V/7jAbK+4yGCDLs12Q4ixbsTdSzfn+U3ucsFVZph14o/xdVPm9/OTjzwv99R3QbQD3QKZdT9uIIvP5A/qJF6IE/3BAj55VhHWBETQMwCGmjdU09y8aZMuSxDXl1dJ68Q==
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore
@@ -11,8 +18,6 @@
 [pull]
 	default = current
 	rebase = true
-[difftool "icdiff"]
-	cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [diff]
 	compactionHeuristic = true
 	algorithm = histogram
@@ -28,7 +33,6 @@
 	cleanup-local-branches = "!git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d"
 	edit-changes = "!$EDITOR $(git diff-files --name-only -0)"
 	recent-branches = "!git for-each-ref --format='%(authoremail)%09%(refname)' --sort=-committerdate 'refs/heads/' | grep \"$(git config user.email)\" | cut -f 2 | cut -d '/' -f 3-"
-	yolo-revert = "!~/dotfiles/utils/revert.sh"
 	fork-point = "!git merge-base --fork-point origin/master $(git rev-parse --abbrev-ref HEAD)"
 	branch-log = "!git log $(git fork-point)...HEAD --oneline"
 [protocol]
@@ -51,3 +55,4 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
+
