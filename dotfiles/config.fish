@@ -26,11 +26,6 @@ set -U fish_greeting
 # Set nightfox color scheme
 source ~/.config/fish/nightfox.fish
 
-# Use exa instead of ls if available
-if type -q exa
-  alias ls="exa"
-end
-
 # Use nvim instead of vim if available
 if type -q nvim
   alias vim="nvim"

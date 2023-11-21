@@ -10,7 +10,6 @@
     bat
     datasette
     difftastic
-    exa
     git
     helix
     jq
