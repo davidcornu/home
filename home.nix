@@ -10,6 +10,7 @@
     bat
     datasette
     difftastic
+    dive
     git
     helix
     jq
