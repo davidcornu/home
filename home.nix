@@ -34,6 +34,8 @@
     flyctl
     lima
     graphicsmagick
+    yarn
+    bottom
   ];
 
   programs.direnv = {
