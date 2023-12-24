@@ -36,6 +36,7 @@
     graphicsmagick
     yarn
     bottom
+    moar
   ];
 
   programs.direnv = {
