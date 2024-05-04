@@ -37,7 +37,6 @@
     yarn
     bottom
     moar
-    jujutsu
   ];
 
   programs.direnv = {
