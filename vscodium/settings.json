@@ -28,7 +28,7 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.allowChords": false,
   "terminal.integrated.sendKeybindingsToShell": true,
-  "workbench.colorTheme": "Material Theme Lighter High Contrast",
+  "workbench.colorTheme": "Ayu Dark Bordered",
   "nix.enableLanguageServer": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -48,5 +48,6 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "html.format.enable": false
 }
