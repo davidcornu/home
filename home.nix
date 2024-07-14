@@ -20,14 +20,12 @@
     nixpkgs-fmt
     nodePackages.prettier
     ripgrep
-    rnix-lsp
     sfz
     shellcheck
     sqlite-interactive
     tmux
     vscodium
     watchexec
-    youtube-dl
     hurl
     ruby_3_2
     nodejs_20
@@ -37,6 +35,7 @@
     yarn
     bottom
     moar
+    jujutsu
   ];
 
   programs.direnv = {
