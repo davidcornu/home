@@ -24,7 +24,6 @@
     shellcheck
     sqlite-interactive
     tmux
-    vscodium
     watchexec
     hurl
     flyctl
@@ -55,8 +54,6 @@
     ".config/nvim/init.lua".source = ./dotfiles/neovim.lua;
     ".config/fish/config.fish".source = ./dotfiles/config.fish;
     ".config/fish/nightfox.fish".source = ./dotfiles/nightfox.fish;
-    # "Library/Application Support/VSCodium/User/settings.json".source = ./vscodium/settings.json;
-    # "Library/Application Support/VSCodium/User/keybindings.json".source = ./vscodium/keybindings.json;
     ".cargo/config.toml".source = ./dotfiles/cargo.toml;
     ".sqliterc".source = ./dotfiles/sqliterc;
   };
