@@ -28,7 +28,7 @@
   "debug.console.fontSize": 16,
   "terminal.integrated.allowChords": false,
   "terminal.integrated.sendKeybindingsToShell": true,
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "Rosé Pine Dawn",
   "nix.enableLanguageServer": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

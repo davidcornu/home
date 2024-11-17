@@ -27,8 +27,6 @@
     vscodium
     watchexec
     hurl
-    ruby_3_2
-    nodejs_20
     flyctl
     lima
     graphicsmagick
