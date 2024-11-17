@@ -16,6 +16,9 @@ if test -d "/Applications/Postgres.app"
   fish_add_path "/Applications/Postgres.app/Contents/Versions/latest/bin"
 end
 
+# Add Homebrew to PATH
+fish_add_path /opt/homebrew/bin
+
 # Add Nix profile to PATH
 fish_add_path "/nix/var/nix/profiles/default/bin"
 fish_add_path "$HOME/.nix-profile/bin"
