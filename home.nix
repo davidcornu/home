@@ -12,13 +12,11 @@
     difftastic
     dive
     git
-    helix
     jq
     mosh
     mtr
     neovim
     nixpkgs-fmt
-    nodePackages.prettier
     ripgrep
     sfz
     shellcheck
@@ -29,10 +27,9 @@
     flyctl
     lima
     graphicsmagick
-    yarn
-    bottom
-    moar
     jujutsu
+    nixd
+    btop
   ];
 
   programs.direnv = {
