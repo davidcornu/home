@@ -27,7 +27,6 @@
     flyctl
     lima
     graphicsmagick
-    jujutsu
     nixd
     btop
   ];
