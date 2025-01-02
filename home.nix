@@ -29,6 +29,8 @@
     graphicsmagick
     nixd
     btop
+    overmind
+    hexyl
   ];
 
   programs.direnv = {
