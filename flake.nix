@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     jujutsu = {
-      url = "github:martinvonz/jj/v0.23.0";
+      url = "github:martinvonz/jj/v0.25.0";
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
     };
