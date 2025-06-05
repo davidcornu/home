@@ -31,6 +31,7 @@
     btop
     overmind
     hexyl
+    nil
   ];
 
   programs.direnv = {
